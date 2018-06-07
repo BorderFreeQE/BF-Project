@@ -162,10 +162,12 @@ public interface GeorgePage {
 	
 	@IDSelector("${pages.george.georgeCheckoutSubmitError}")
 	public AspireWebElement georgeCheckoutSubmitError();
-    
-    
-    
-    
+	
+	@CssSelector("${pages.george.georgeValidPdp}")
+	public AspireWebElements georgeValidPdp();
+	
+	@CssSelector("${pages.george.georgeSizes}")
+	public AspireWebElements georgeSizes();
     
     
     

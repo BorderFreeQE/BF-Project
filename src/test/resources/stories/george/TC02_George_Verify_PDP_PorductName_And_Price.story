@@ -6,6 +6,7 @@ Scenario:  TC02_George_Verify_PDP_PorductName_And_Price
 Given [1000-9001] User on george page
 When [1200-1302] For any element from georgeTopNav
 And [1100-0400] Execute `click` javascript on the element
+And [8032-0001] sleep after last action for 5000 Milliseconds
 And [1200-1302] For any element from georgeCategory
 And [1100-0400] Execute `click` javascript on the element
 And [1211-1080] georgeProducts should be all displayed, Within 120 seconds

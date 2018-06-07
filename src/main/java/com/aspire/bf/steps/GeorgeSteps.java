@@ -48,21 +48,31 @@ public class GeorgeSteps {
 	{
 		try
 		{
-			if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
+			sleep("5000");
+			AspireBrowser.getLastAccessedPage();
+			String text = "#longBuyingBlock div.quantity_subtotal_buttons div.addToBasketMoreInfoContainer div.addToBasket div";
+			String elemente = georgePage.cssElement(text).getElement().getText().toString();
+			System.out.println(elemente);
+			if(elemente.equals("International delivery not available."))
 			{
-				System.out.println("Valid PDP");
+				randomclick("georgeTopNav");
+				sleep("3000");
+				randomclick("georgeCategory");
+				sleep("3000");
+				randomclick("georgeProducts");
+				sleep("3000");
+				search(element);
 			}
 			else 
 			{
-				randomclick("georgeTopNav");
-				randomclick("georgeProducts");
-				search(element);
+				
 			}
 		}
 		catch (NoSuchElementException e)
 		{
 			System.out.println("Catch");
 		}
+		
 	}
 	
 	
@@ -197,8 +207,9 @@ public class GeorgeSteps {
 	
 	
 	
-	public void randomclick(String element)
+	public void randomclick(String element) throws InterruptedException
 	{
+		sleep("5000");
 		Random rand = new Random();
 		int  random = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly(element).size());
 		AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).js("arguments[0].click();", null);
