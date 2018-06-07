@@ -3,10 +3,8 @@ Meta:
 
 Scenario:  TC04_George_Verify_price_correctness_after_updating_item_QTY
 
-Given [1101-1080] georgePdp should be displayed
-When [1100-1371] User moves mouse to georgeCartIcon and click on georgeBasketAndCheckout
-And [1111-1080] georgeCartPage should be displayed, Within 120 seconds
-And [1100-1300] User clicks on the georgeCartQuantity
+Given [1101-1080] georgeCartPage should be displayed
+When [1100-1300] User clicks on the georgeCartQuantity
 And [1100-1300] User clicks on the georgeCartQuantity2
 And [1101-1181] the user saves georgeCartPrice text in global scope under name georgeCartPriceAfter
 And [8032-0006] User hits `generalPantsCartPrice` with 2

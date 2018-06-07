@@ -11,6 +11,7 @@ And [1101-1181] the user saves georgePdpPrice text in global scope under name ge
 And [1101-1181] the user saves georgePdpName text in global scope under name georgePdpName
 And [1100-1400] Execute `click` javascript on georgeAddToBasket
 And [1100-1370] User move mouse to georgeCartIcon and click it
+And [1111-1080] georgeCartPage should be displayed, Within 120 seconds
 And [1101-1181] the user saves georgeCartPrice text in global scope under name georgeCartPrice
 And [1101-1181] the user saves georgeCartName text in global scope under name georgeCartName
 Then [5101-1100] verify that text `georgePdpName` and text `georgeCartName` are equals

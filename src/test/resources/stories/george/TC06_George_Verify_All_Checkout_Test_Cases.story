@@ -5,7 +5,7 @@ Scenario:  TC06_George_Verify_All_Checkout_Test_Cases
 
 Given [1101-1080] georgeCartPage should be displayed
 When [1100-1400] Execute `click` javascript on georgeCheckout
-And [8032-0001] sleep after last action for 10000 Milliseconds
+And [8032-0001] sleep after last action for 15000 Milliseconds
 And [1000-6010] Focus on Frame envoyId
 And [1100-1321] User scroll to the georgeDeliveryContinue then click it
 And [1101-1102] georgeCheckoutEmailError text is equal to Email address is required case sensitive
