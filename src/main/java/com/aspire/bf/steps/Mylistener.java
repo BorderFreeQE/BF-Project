@@ -137,7 +137,20 @@ public class Mylistener implements TestEventListener {
                             					}
                             					catch (NoSuchElementException | InterruptedException e8)
                             					{
-                            						
+                            						try
+                                					{
+                                						if (AspireBrowser.getElementByPropertyNameGlobaly("gapFeedBackDialog").isDisplayed())
+                                                 	    {
+                                                 		 AspireBrowser.getElementByPropertyNameGlobaly("gapFeedBackCloseDialog").click();
+                                                 		
+                                                 		 Thread.sleep(5000);
+                                                 		 System.out.println("Her Room Dialog closed");
+                                                 	     }
+                                					}
+                                					catch (NoSuchElementException | InterruptedException e9)
+                                					{
+                                						
+                                					}
                             					}
                         					}
                     					}

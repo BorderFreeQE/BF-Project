@@ -7,7 +7,7 @@ Given [1000-9130] Clear cache and cookies
 When [1000-3000] User maximize browser window
 And [1000-9000] User opens bcbg page
 And [1200-1302] For any element from bcbgTopNavStore
-And [1111-0000] It should be clickable, Within 120 seconds
+!-- And [1211-0000] They should be all clickable, Within 120 seconds
 And [1100-0400] Execute `click` javascript on the element
 And [1211-1080] bcbgProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from bcbgProducts
