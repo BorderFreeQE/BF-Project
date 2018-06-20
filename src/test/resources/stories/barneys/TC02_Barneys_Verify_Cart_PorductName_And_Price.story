@@ -4,7 +4,9 @@ Meta:
 Scenario:  TC02_Barneys_Verify_Cart_PorductName_And_Price
 
 Given [1101-1080] barneysPdp should be displayed
-When [8008-0006] user randomly select an available size
+When [8012-992] sleep time 3000
+And [1000-9300] User refresh the page
+And [8008-0006] user randomly select an available size
 And [1111-1080] barneysAddToBagButton should be displayed, Within 120 seconds
 And [1100-0300] User click on it
 And [1111-1080] barneysMyBagDialog should be displayed, Within 120 seconds

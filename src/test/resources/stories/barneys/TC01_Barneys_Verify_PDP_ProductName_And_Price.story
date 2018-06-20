@@ -9,6 +9,7 @@ And [1000-9000] User opens barneys page
 And [1200-1302] For any element from barneysTopNavStore
 And [1100-0400] Execute `click` javascript on the element
 And [1111-1080] barneysSalesPage should be displayed, Within 120 seconds
+And [8012-993] User scroll 700 to laod items
 And [1200-1302] For any element from barneysSales
 And [1100-0400] Execute `click` javascript on the element
 And [1111-1080] barneysPlp should be displayed, Within 120 seconds
