@@ -18,7 +18,7 @@ aspire:
 #          - stories/bergdorf/**.story
 #          - stories/ebags/**.story
 #          - stories/eddiebauer/**.story
-#           - stories/gap/**.story
+           - stories/gap/**.story
 #          #- stories/generalpants/**.story
 #          - stories/george/**.story
 #          - stories/gilt/**.story
