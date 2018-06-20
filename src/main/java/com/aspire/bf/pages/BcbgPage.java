@@ -167,7 +167,8 @@ public interface BcbgPage {
 	@CssSelector("${pages.bcbg.bcbgSubmitError}")
 	public AspireWebElement bcbgSubmitError();
 	
-	
+	@CssSelector("${close_Dialog}")
+	public AspireWebElement close_Dialog();
 	
 	
 	
