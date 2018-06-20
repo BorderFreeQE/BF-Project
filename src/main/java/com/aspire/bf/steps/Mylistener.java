@@ -125,20 +125,33 @@ public class Mylistener implements TestEventListener {
                         					}
                         					catch (NoSuchElementException | InterruptedException e7)
                         					{
-                        						try
+                        						/*try
                             					{
                             						if (AspireBrowser.getElementByPropertyNameGlobaly("bcbgEmailDialog").isDisplayed())
                                              	    {
                                              		 AspireBrowser.getElementByPropertyNameGlobaly("bcbgEmailDialogClose").click();
                                              		
                                              		 Thread.sleep(5000);
-                                             		 System.out.println("Her Room Dialog closed");
+                                             		 System.out.println("BCBG Dialog closed");
                                              	     }
-                            					}
-                            					catch (NoSuchElementException | InterruptedException e8)
-                            					{
-                            						
-                            					}
+                            					}*/
+                            					/*catch (NoSuchElementException | InterruptedException e8)
+                            					{*/
+                            						try
+                                					{
+                                						if (AspireBrowser.getElementByPropertyNameGlobaly("gapFeedBackDialog").isDisplayed())
+                                                 	    {
+                                                 		 AspireBrowser.getElementByPropertyNameGlobaly("gapFeedBackCloseDialog").click();
+                                                 		
+                                                 		 Thread.sleep(5000);
+                                                 		 System.out.println("Her Room Dialog closed");
+                                                 	     }
+                                					}
+                                					catch (NoSuchElementException | InterruptedException e9)
+                                					{
+                                						
+                                					}
+                            					/*}*/
                         					}
                     					}
                 					}
