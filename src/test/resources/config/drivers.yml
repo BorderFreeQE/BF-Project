@@ -50,7 +50,7 @@ aspire:
  
       capabilities:
         browser : firefox
-        browser_version : 53.0
+        browser_version : 60.0
         os : OS X
         os_version: El Capitan
         project : WEB ASPIRE TEMPLATE TEST
