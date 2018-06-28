@@ -1,12 +1,12 @@
 aspire:  
   webdriver:
-     scope: 
+     scope: restart
       
   jbehave:
     metat-data:
     thread: 1
     story-time-out: 3000 
-    rerun: 0
+    rerun: 1
     softassert: 
       enabled: true 
     stories:
@@ -18,7 +18,7 @@ aspire:
 #          - stories/bergdorf/**.story
 #          - stories/ebags/**.story
 #          - stories/eddiebauer/**.story
-           - stories/gap/**.story
+           - stories/gap/TC04*.story
 #          #- stories/generalpants/**.story
 #          - stories/george/**.story
 #          - stories/gilt/**.story

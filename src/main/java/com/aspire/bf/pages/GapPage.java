@@ -3,163 +3,186 @@ package com.aspire.bf.pages;
 import com.aspire.automation.web.util.AspireWebElement;
 import com.aspire.automation.web.util.AspireWebElements;
 import com.aspire.automation.web.util.annotation.CssSelector;
+import com.aspire.automation.web.util.annotation.IDSelector;
 import com.aspire.automation.web.util.annotation.Page;
 
-@Page(name = "gap", url = "${pages.gap.gapUrl}")
+@Page(name = "gap", url = "${gapUrl}")
 public interface GapPage {
 
-	@CssSelector("${pages.gap.gapClosePromoIcon}")
+	@CssSelector("${gapClosePromoIcon}")
 	public AspireWebElement gapClosePromoIcon();
 	
-	@CssSelector("${pages.gap.gapCategorySection}")
+	@CssSelector("${gapCategorySection}")
 	public AspireWebElement gapCategorySection();
 	
-	@CssSelector("${pages.gap.gapCategory}")
-	public AspireWebElements gapCategory();
+	@CssSelector("${gapCategory}")
+	public AspireWebElement gapCategory();
 	
-	@CssSelector("${pages.gap.gapFeedBackDialog}")
-	public AspireWebElements gapFeedBackDialog();
+	//optly-modal-content
+	@CssSelector("${gapAlertDialog}")
+	public AspireWebElement gapAlertDialog();
 	
-	@CssSelector("${pages.gap.gapFeedBackCloseDialog}")
-	public AspireWebElements gapFeedBackCloseDialog();
+	@CssSelector("${gapCloseAlertDialog}")
+	public AspireWebElement gapCloseAlertDialog();
 	
+	@CssSelector("${gapCategoryProduct}")
+	public AspireWebElements gapCategoryProduct();
 	
+	//Gap product Elements  
+	@CssSelector("${gapProductCardImg}")
+	public AspireWebElements gapProductCardImg();
 	
+	@CssSelector("${gapProductCard}")
+	public AspireWebElements gapProductCard();
 	
+	@CssSelector("${gapProductCardPrice}")
+	public AspireWebElement gapProductCardPrice();
 	
+	@CssSelector("${gapProductCardName}")
+	public AspireWebElement gapProductCardName();
 	
 	
+	//Gap PDP Elements
+	@CssSelector("${gapPDPImg}")
+	public AspireWebElement gapPDPImg();
 	
+	@CssSelector("${gapPDPCardPrice}")
+	public AspireWebElement gapPDPCardPrice();
 	
+	@CssSelector("${gapPDPCardName}")
+	public AspireWebElement gapPDPCardName();
 	
+	@CssSelector("${gapSizeOfProduct}")
+	public AspireWebElements gapSizeOfProduct();
 	
+	@CssSelector("${gapAddToBag}")
+	public AspireWebElement gapAddToBag();
 	
 	
+	//Gap Product Dialog
+	@CssSelector("${gapProductDialog}")
+	public AspireWebElement gapProductDialog();
 	
+	@CssSelector("${gapDialogProductName}")
+	public AspireWebElement gapDialogProductName();
 	
+	@CssSelector("${gapDialogProductPrice}")
+	public AspireWebElement gapDialogProductPrice();
 	
+	//Gap CheckOut Product
+	@CssSelector("${gapCheckOut}")
+	public AspireWebElement gapCheckOut();
 	
+	@CssSelector("${gapRemove}")
+	public AspireWebElement gapRemove();
 	
+	@CssSelector("${gapCheckOutOrder}")
+	public AspireWebElement gapCheckOutOrder();
 	
+	//Gap Cart Page
+	@CssSelector("${gapCartTotalPrice}")
+	public AspireWebElement gapCartTotalPrice();
 	
 	
+	//Gap International Shaping
+	@CssSelector("${gapMyAccont}")
+	public AspireWebElement gapMyAccont();
 	
+	@CssSelector("${gapDropDown}")
+	public AspireWebElement gapDropDown();
 	
+	@IDSelector("${gapRegion}")
+	public AspireWebElement gapRegion();
 	
+	@IDSelector("${gapLocation}")
+	public AspireWebElement gapLocation();
 	
+	@IDSelector("${gapCuntinueButton}")
+	public AspireWebElement gapCuntinueButton();
 	
+	@CssSelector("${gapClosePrivacyDialog}")
+	public AspireWebElement gapClosePrivacyDialog();
 	
+	//Gap Delivery Data(Negative response)
+	@IDSelector("${gapCuntinueOrder}")
+	public AspireWebElement gapCuntinueOrder();
+
+	@IDSelector("${gapEmailAddressError}")
+	public AspireWebElement gapEmailAddressError();
+
+	@IDSelector("${gapFirstNameError}")
+	public AspireWebElement gapFirstNameError();
+
+	@IDSelector("${gapLastNameError}")
+	public AspireWebElement gapLastNameError();
+
+	@IDSelector("${gapAddressError}")
+	public AspireWebElement gapAddressError();
+
+	@IDSelector("${gapCityError}")
+	public AspireWebElement gapCityError();
+
+	@IDSelector("${gapZipCodeError}")
+	public AspireWebElement gapZipCodeError();
+
+	@IDSelector("${gapPhoneNumberError}")
+	public AspireWebElement gapPhoneNumberError();
 	
 	
+	//Gap Delivery Data
+	@CssSelector("${gapDeliveryEmailAddress}")
+	public AspireWebElement gapDeliveryEmailAddress();
 	
+	@CssSelector("${gapDeliveryFirstName}")
+	public AspireWebElement gapDeliveryFirstName();
 	
+	@CssSelector("${gapDeliveryLastName}")
+	public AspireWebElement gapDeliveryLastName();
 	
+	@CssSelector("${gapDeliveryAddress}")
+	public AspireWebElement gapDeliveryAddress();
 	
 	
+	@CssSelector("${gapDeliveryCity}")
+	public AspireWebElement gapDeliveryCity();
 	
+	@CssSelector("${gapDeliveryZipCode}")
+	public AspireWebElement gapDeliveryZipCode();
 	
+	@CssSelector("${gapPhoneNumber}")
+	public AspireWebElement gapPhoneNumber();
 	
 	
+	//Gap Payment Data(Negative Response)
+	@IDSelector("${gapPalceOrderButton}")
+	public AspireWebElement gapPalceOrderButton();
 	
+	@IDSelector("${gapCardNumberError}")
+	public AspireWebElement gapCardNumberError();
 	
+	@IDSelector("${gapExpirationDateError}")
+	public AspireWebElement gapExpirationDateError();
 	
+	@IDSelector("${gapSecurityCodeError}")
+	public AspireWebElement gapSecurityCodeError();
+
+	//Gap Payment Data
+	@CssSelector("${gapPaymentCardNumber}")
+	public AspireWebElement gapPaymentCardNumber();
 	
+	@CssSelector("${gapPaymentExpirationDate}")
+	public AspireWebElement gapPaymentExpirationDate();
 	
+	@CssSelector("${gapPaymentSecurityCode}")
+	public AspireWebElement gapPaymentSecurityCode();
 	
 	
+	@CssSelector("${gapSubmitError}")
+	public AspireWebElement gapSubmitError();
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	
 }
