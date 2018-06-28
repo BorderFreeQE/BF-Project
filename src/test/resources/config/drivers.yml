@@ -1,7 +1,7 @@
 aspire: 
   webdriver:
     chrome:
-      enabled: true
+      enabled: false
       name: chrome
       mobile: false
       remote:
@@ -34,7 +34,7 @@ aspire:
       - --disable-extensions
        
     firefox:
-      enabled: false
+      enabled: true
       name: firefox
       mobile: false
       remote:
@@ -50,7 +50,7 @@ aspire:
  
       capabilities:
         browser : firefox
-        browser_version : 53.0
+        browser_version : 60.0
         os : OS X
         os_version: El Capitan
         project : WEB ASPIRE TEMPLATE TEST

@@ -4,7 +4,8 @@ Meta:
 Scenario:  TC04_Ebags_Verify_price_correctness_after_updating_item_QTY
 
 Given [1101-1080] ebagsQuickView should be displayed
-When [1100-1300] User clicks on the ebagsQvClose
+And [8012-992] sleep time 3000
+When [1000-9400] Execute $('.modal-content .atc-close').click() javascript
 And [8006-0005] User hits `ebagsPdpPrice` with 2
 And [1100-1300] User clicks on the ebagsAddToCartButton
 And [1111-1080] ebagsQuickView should be displayed, Within 120 seconds

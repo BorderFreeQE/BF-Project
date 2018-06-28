@@ -15,6 +15,7 @@ import com.aspire.automation.web.util.AspireBrowser;
 
 public class CommonSteps {
 
+	@Given("[8012-992] sleep time $time")
 	@Then("[8012-992] sleep time $time")
     @When("[8012-992] sleep time $time")
     public void verifyTime(int time) {
