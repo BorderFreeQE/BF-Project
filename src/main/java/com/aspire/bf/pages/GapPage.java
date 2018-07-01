@@ -91,13 +91,13 @@ public interface GapPage {
 	@CssSelector("${gapDropDown}")
 	public AspireWebElement gapDropDown();
 	
-	@IDSelector("${gapRegion}")
+	@CssSelector("${gapRegion}")
 	public AspireWebElement gapRegion();
 	
-	@IDSelector("${gapLocation}")
+	@CssSelector("${gapLocation}")
 	public AspireWebElement gapLocation();
 	
-	@IDSelector("${gapCuntinueButton}")
+	@CssSelector("${gapCuntinueButton}")
 	public AspireWebElement gapCuntinueButton();
 	
 	@CssSelector("${gapClosePrivacyDialog}")
