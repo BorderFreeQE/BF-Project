@@ -6,7 +6,6 @@ Scenario:  TC06_Ebags_Verify_All_Checkout_Test_Cases
 Given [1101-1080] ebagsCartPage should be displayed
 When [1100-1300] User clicks on the ebagsContinuoCheckout
 And [8006-0010] sleep after last action for 20000 Milliseconds
-And [1000-6010] Focus on Frame envoyId
 And [1111-1080] ebagsDeliveryCheckout should be displayed, Within 30 seconds
 And [1101-1181] the user saves ebagsItemsTotal text in global scope under name ebagsItemsTotal
 And [1101-1181] the user saves ebagsShipping text in global scope under name ebagsShipping

@@ -10,6 +10,7 @@ And [1200-1302] For any element from bcbgTopNavStore
 And [1100-0400] Execute `click` javascript on the element
 And [1211-1080] bcbgProducts should be all displayed, Within 120 seconds
 And [1100-1380] User double click on the close_Dialog
+And [8012-993] User scroll 700 to laod items
 And [1200-1302] For any element from bcbgProducts
 And [1101-1181] the user saves bcbgProductName text in global scope under name bcbgProductName
 And [1101-1181] the user saves bcbgProductPrice text in global scope under name bcbgProductPrice

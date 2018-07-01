@@ -3,7 +3,7 @@ Meta:
 
 Scenario:  TC03_Bergdorf_Verify_price_correctness_after_updating_item_QTY
 
-Given [1101-1080] bloomingdales Product Page should be displayed
+!-- Given [1101-1080] bergdorf Product Pagee should be displayed
 When [1100-1370] User move mouse to bergdorfBagIcon and click it
 And [1100-1300] User clicks on the bergdorfBagCheckout
 And [1111-1080] bergdorfBagPage should be displayed, Within 120 seconds

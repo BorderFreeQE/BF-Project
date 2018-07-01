@@ -186,9 +186,12 @@ public interface EbagsPage {
 	@CssSelector("${pages.ebags.ebagsItemCart}")
 	public AspireWebElement ebagsItemCart();
 	
+	@CssSelector("${pages.ebags.ebagsProductGategory}")
+	public AspireWebElements ebagsProductGategory();
+	
+	
 	@CssSelector("${pages.ebags.ebagsCartIcon}")
 	public AspireWebElement ebagsCartIcon();
-	
 	
 	
 	
