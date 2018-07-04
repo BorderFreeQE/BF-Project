@@ -4,11 +4,10 @@ Meta:
 Scenario:  TC05_George_Add_Multiple_Products_To_Cart_From_Different_Categories_And_Verify_Sum_Is_Correct
 
 Given [1101-1080] georgeCartPage should be displayed
-When [1200-1302] For any element from georgeTopNav
-And [1100-0400] Execute `click` javascript on the element
-And [8032-0001] sleep after last action for 5000 Milliseconds
-And [1200-1302] For any element from georgeCategory
-And [1100-0400] Execute `click` javascript on the element
+When [1200-1302] For any element from georgeProductItems
+And [1100-0581] the user saves its attribute of href in global scope under name george category URL
+Then [1000-9110] User navigate to `george category URL` URL
+When [8012-993] User scroll 700 to laod items
 And [1211-1080] georgeProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from georgeProducts
 And [1100-0300] User click on it

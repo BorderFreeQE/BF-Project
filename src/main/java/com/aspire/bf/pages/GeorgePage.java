@@ -91,7 +91,7 @@ public interface GeorgePage {
     @CssSelector("${pages.george.georgeCheckout}")
    	public AspireWebElement georgeCheckout();
     
-    @IDSelector("${pages.george.georgeDeliveryContinue}")
+    @CssSelector("${pages.george.georgeDeliveryContinue}")
 	public AspireWebElement georgeDeliveryContinue();
 	
 	@CssSelector("${pages.george.georgeCheckoutEmailError}")
@@ -169,6 +169,8 @@ public interface GeorgePage {
 	@CssSelector("${pages.george.georgeSizes}")
 	public AspireWebElements georgeSizes();
     
+	@CssSelector("${pages.george.georgeProductItems}")
+	public AspireWebElements georgeProductItems();
     
     
     
