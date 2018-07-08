@@ -5,7 +5,6 @@ Scenario:  TC05_Bcbg_Add_Multiple_Products_To_Cart_From_Different_Categories_And
 
 Given [1101-1080] bcbgCartPage should be displayed
 When [1200-1302] For any element from bcbgTopNavStore
-And [1111-0000] It should be clickable, Within 120 seconds
 And [1100-0400] Execute `click` javascript on the element
 And [1211-1080] bcbgProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from bcbgProducts

@@ -15,6 +15,7 @@ And [1200-1302] For any element from bcbgProducts
 And [1101-1181] the user saves bcbgProductName text in global scope under name bcbgProductName
 And [1101-1181] the user saves bcbgProductPrice text in global scope under name bcbgProductPrice
 And [1100-1581] the user saves bcbgProductImage attribute of src in global scope under name bcbgProductImage
+And [1100-0320] User scroll to it
 And [1100-0371] User move mouse to it and click on bcbgQuickView
 And [1111-1080] bcbgQuickViewDialog should be displayed, Within 120 seconds
 And [1101-1181] the user saves bcbgQuickViewName text in global scope under name bcbgQuickViewName
