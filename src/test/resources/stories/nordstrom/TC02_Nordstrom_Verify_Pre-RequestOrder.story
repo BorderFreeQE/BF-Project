@@ -1,7 +1,7 @@
 Meta:
 @ReportName nordstrom
 
-Scenario:  TC01_Harrods_Verify_Quick_View_ProductName_And_Price
+Scenario:  Nordstrom_Verify_Pre-RequestOrder
 
 Given [1000-9001] User on nordstrom page
 When [1200-1302] For any element from nordstrom Category Product

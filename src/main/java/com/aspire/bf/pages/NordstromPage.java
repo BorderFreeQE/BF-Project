@@ -10,6 +10,7 @@ import com.aspire.automation.web.util.annotation.Page;
 
 public interface NordstromPage {
 
+	//______Nordstrom First Lunch
 	@CssSelector("${nordstromWelcomeMat}")
 	public AspireWebElement nordstromWelcomeMat();
 	
@@ -22,6 +23,11 @@ public interface NordstromPage {
 	@CssSelector("${nordstromCategoryProductChilren}")
 	public AspireWebElements nordstromCategoryProductChilren();
 	
+	@CssSelector("${nordstromProductsBag}")
+	public AspireWebElement nordstromProductsBag();
+	
+	
+	//______Nordstrom PCP
 	@CssSelector("${nordstromProductsCard}")
 	public AspireWebElements nordstromProductsCard();
 	
@@ -31,6 +37,8 @@ public interface NordstromPage {
 	@CssSelector("${nordstromProductCardName}")
 	public AspireWebElement nordstromProductCardName();
 	
+	
+	//_____Nordstrom PDP 
 	@CssSelector("${nordstromPDPImg}")
 	public AspireWebElement nordstromPDPImg();
 	
@@ -49,6 +57,8 @@ public interface NordstromPage {
 	@CssSelector("${nordstromAddToBag}")
 	public AspireWebElement nordstromAddToBag();
 	
+	
+	//_____Nordstrom Dialog
 	@CssSelector("${nordstromProductDialog}")
 	public AspireWebElement nordstromProductDialog();
 	
@@ -75,12 +85,18 @@ public interface NordstromPage {
 	@CssSelector("${nordstromAddressError}")
 	public AspireWebElement nordstromAddressError();	
 
+	//______Nordstrom Delivery Data(Negative response)
 	@CssSelector("${nordstromPhoneNumberError}")
 	public AspireWebElement nordstromPhoneNumberError();	
 
 	@CssSelector("${nordstromCityError}")
 	public AspireWebElement nordstromCityError();	
 
+	@CssSelector("${nordstromCardNumberError}")
+	public AspireWebElement nordstromCardNumberError();	
+
+	
+	//____Nordstrom Delivery Data
 	@CssSelector("${nordstromDeliveryEmailAddress}")
 	public AspireWebElement nordstromDeliveryEmailAddress();	
 
@@ -105,15 +121,8 @@ public interface NordstromPage {
 	@CssSelector("${nordstromPalceOrderButton}")
 	public AspireWebElement nordstromPalceOrderButton();	
 
-	@CssSelector("${nordstromCardNumberError}")
-	public AspireWebElement nordstromCardNumberError();	
-
-	@CssSelector("${nordstromExpirationDateError}")
-	public AspireWebElement nordstromExpirationDateError();	
-
-	@CssSelector("${nordstromSecurityCodeError}")
-	public AspireWebElement nordstromSecurityCodeError();	
-
+	
+	//______Nordstrom Payment Data
 	@CssSelector("${nordstromPaymentCardNumber}")
 	public AspireWebElement nordstromPaymentCardNumber();	
 	
@@ -123,9 +132,17 @@ public interface NordstromPage {
 	@CssSelector("${nordstromPaymentSecurityCode}")
 	public AspireWebElement nordstromPaymentSecurityCode();	
 	
+
+	//____Nordstrom Payment Data(Negative Response)
 	@CssSelector("${nordstromSubmitError}")
 	public AspireWebElement nordstromSubmitError();	
 	
+	@CssSelector("${nordstromExpirationDateError}")
+	public AspireWebElement nordstromExpirationDateError();	
+
+	@CssSelector("${nordstromSecurityCodeError}")
+	public AspireWebElement nordstromSecurityCodeError();	
+
 	
 	@CssSelector("${nordstromProductDialogclose}")
 	public AspireWebElement nordstromProductDialogclose();	
@@ -135,6 +152,9 @@ public interface NordstromPage {
 	public AspireWebElement nordstromGoToCheckout();	
 		
 	
+	
+	
+	//____Nordstrom Bag Page
 	@CssSelector("${nordstromBagItemName}")
 	public AspireWebElement nordstromBagItemName();
 	
@@ -144,124 +164,21 @@ public interface NordstromPage {
 	@CssSelector("${nordstromBagItemImg}")
 	public AspireWebElement nordstromBagItemImg();
 	
-	@CssSelector("${nordstromProductsBag}")
-	public AspireWebElement nordstromProductsBag();
+	@CssSelector("${nordstromBagItemTotalPrice}")
+	public AspireWebElement nordstromBagItemTotalPrice();
 	
+	@CssSelector("${nordstromRemoveItem}")
+	public AspireWebElement nordstromRemoveItem();
+
+	@CssSelector("${nordsromUpdateQuantityOfItem}")
+	public AspireWebElement nordsromUpdateQuantityOfItem();
 	
 	
+	@CssSelector("${nordstromUpdateItem}")
+	public AspireWebElement nordstromUpdateItem();
 	
+	@CssSelector("${nordsromQuantityPricesOfItem}")
+	public AspireWebElement nordsromQuantityPricesOfItem();
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

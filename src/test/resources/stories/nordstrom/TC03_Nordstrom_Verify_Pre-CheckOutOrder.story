@@ -2,7 +2,7 @@ Meta:
 
 @ReportName nordstrom
 
-Scenario:  Nordstrom_Verify_Pre-CheckOuttOrder
+Scenario: Nordstrom_Verify_Pre-CheckOuttOrder
 Given [1100-1300] User clicks on the nordstrom Size Lable
 When [1200-1302] For any element from nordstrom Size Of Product
 And [1100-0300] User click on it
