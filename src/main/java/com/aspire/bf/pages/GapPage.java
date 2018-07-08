@@ -104,28 +104,28 @@ public interface GapPage {
 	public AspireWebElement gapClosePrivacyDialog();
 	
 	//Gap Delivery Data(Negative response)
-	@IDSelector("${gapCuntinueOrder}")
+	@CssSelector("${gapCuntinueOrder}")
 	public AspireWebElement gapCuntinueOrder();
 
-	@IDSelector("${gapEmailAddressError}")
+	@CssSelector("${gapEmailAddressError}")
 	public AspireWebElement gapEmailAddressError();
 
-	@IDSelector("${gapFirstNameError}")
+	@CssSelector("${gapFirstNameError}")
 	public AspireWebElement gapFirstNameError();
 
-	@IDSelector("${gapLastNameError}")
+	@CssSelector("${gapLastNameError}")
 	public AspireWebElement gapLastNameError();
 
-	@IDSelector("${gapAddressError}")
+	@CssSelector("${gapAddressError}")
 	public AspireWebElement gapAddressError();
 
-	@IDSelector("${gapCityError}")
+	@CssSelector("${gapCityError}")
 	public AspireWebElement gapCityError();
 
-	@IDSelector("${gapZipCodeError}")
+	@CssSelector("${gapZipCodeError}")
 	public AspireWebElement gapZipCodeError();
 
-	@IDSelector("${gapPhoneNumberError}")
+	@CssSelector("${gapPhoneNumberError}")
 	public AspireWebElement gapPhoneNumberError();
 	
 	
