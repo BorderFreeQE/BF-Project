@@ -194,7 +194,8 @@ public interface EbagsPage {
 	public AspireWebElement ebagsCartIcon();
 	
 	
-	
+	@CssSelector("${pages.ebags.ebagsGuestCheckout}")
+	public AspireWebElement ebagsGuestCheckout();
 	
 	
 	

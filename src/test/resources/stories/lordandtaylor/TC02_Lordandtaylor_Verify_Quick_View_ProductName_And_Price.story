@@ -10,10 +10,10 @@ And [1100-0300] User click on it
 And [1211-1080] lordandtaylorProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from lordandtaylorProducts
 And [1100-1581] the user saves lordandtaylorProductImage attribute of src in global scope under name lordandtaylorProductImage
-And [1101-1181] the user saves lordandtaylorProductName text in global scope under name lordandtaylorProductName
 And [1101-1181] the user saves lordandtaylorProductPrice text in global scope under name lordandtaylorProductPrice
+And [1101-1181] the user saves lordandtaylorProductName text in global scope under name lordandtaylorProductName
 And [1100-0360] User move mouse to it
-And [1100-1400] Execute `click` javascript on lordandtaylorPreviewThisProductIcon
+And [1100-1400] Execute `click` javascript on lanebryantProductQuickView
 And [1111-1080] lordandtaylorQuickViewDialog should be displayed, Within 120 seconds
 And [1101-1181] the user saves lordandtaylorQuickViewProductPrice text in global scope under name lordandtaylorQuickViewPrice
 Then [8009-0001] User compare between `lordandtaylorProductPrice` and `lordandtaylorQuickViewPrice`

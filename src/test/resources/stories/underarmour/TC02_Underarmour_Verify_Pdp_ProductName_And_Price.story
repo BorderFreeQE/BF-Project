@@ -5,6 +5,7 @@ Scenario:  TC02_Underarmour_Verify_Pdp_ProductName_And_Price
 
 Given [1000-9001] User on underarmour page
 When [1100-1320] User scroll to the underarmourNewArrivalsSection
+And [8012-993] User scroll 700 to laod items
 And [1200-1302] For any element from underarmourNewArrivalsCategory
 And [1100-0400] Execute `click` javascript on the element
 And [1111-1080] underarmourPlp should be displayed, Within 120 seconds

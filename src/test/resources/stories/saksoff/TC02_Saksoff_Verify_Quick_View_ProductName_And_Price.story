@@ -9,8 +9,8 @@ And [1200-0302] For any of the elements
 And [1100-0300] User click on it
 And [1211-1080] saksoffProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from saksoffProducts
-And [1101-1181] the user saves saksoffProductName text in global scope under name saksoffProductName
 And [1101-1181] the user saves saksoffProductPrice text in global scope under name saksoffProductPrice
+And [1101-1181] the user saves saksoffProductName text in global scope under name saksoffProductName
 And [1100-0360] User move mouse to it
 And [1100-1400] Execute `click` javascript on saksoffPreviewThisProductIcon
 And [1111-1080] saksoffQuickViewDialog should be displayed, Within 120 seconds

@@ -7,6 +7,7 @@ Given [1101-1080] saksPdpProductPage should be displayed
 When [1101-1140] saksBagProductName text should contain `saksPdpProductName`
 And [1100-1300] User clicks on the saksBagCloseButton
 And [1101-1080] saksPdpProductPage should be displayed
+And [1100-1320] User scroll to the saksAddToBagButton
 And [1100-1300] User clicks on the saksAddToBagButton
 And [1111-1080] saksShoppingBag should be displayed, Within 120 seconds
 And [1100-1581] the user saves saksBagQTY attribute of innerText in global scope under name saksBagQTY
