@@ -4,8 +4,8 @@ Meta:
 
 Scenario: WilliamsS_Verify_DeliveryRequirements(invalied values)
 
-Given [8012-992] sleep time 3000
-And [1000-6010] Focus on Frame envoyId
+Given [8012-992] sleep time 30000
+When [1000-6010] Focus on Frame envoyId
 And [1100-1320] User scroll to the nordstrom Cuntinue Order
 And [1100-1300] User clicks on the nordstrom Cuntinue Order
 Then [1101-1102] nordstrom Email Address Error text is equal to Email address is required case sensitive

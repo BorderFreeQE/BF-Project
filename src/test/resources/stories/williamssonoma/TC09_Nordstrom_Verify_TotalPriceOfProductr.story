@@ -5,23 +5,25 @@ Meta:
 Scenario: WilliamsS_Verify_TotalPriceOfProductr
 
 Scenario: Gap_Verify_TotalPriceOfProductr
-Given [1000-9000] User opens nordstrom page
-When [1200-1302] For any element from williamsS Products
-And [1100-0581] the user saves its attribute of href in global scope under name williamS Products URL
-Then [1000-9110] User navigate to `williamS Products URL` URL
+Then [1000-9110] User navigate to `williamSURLDirect` URL
 When [8012-993] User scroll 700 to laod items
 And [8012-992] sleep time 3000
-When [8012-993] User scroll 500 to laod items
 And [1200-1302] For any element from williamS PLP 
 And [1111-1080] williamS PDP Img should be displayed, Within 120 seconds
-And [1101-1181] the user saves williamS PLP Card Name text in global scope under name williamS Product Name
+And [1100-0320] User scroll to it
 And [1100-0300] User click on it
-And [1101-1181] the user saves williamsS PDP Price text in global scope under name <gap Price Round>
+When [8012-992] sleep time 3000
+When [1111-1080] williamsS PDP Img should be displayed, Within 120 seconds
+And [8012-992] sleep time 3000
+And [1101-1181] the user saves williamsS PDP Price text in global scope under name <williamsS Price Round>
+And [1100-1321] User scroll to the williamS PDP Add To Cart then click it
+And [8012-992] sleep time 1000
+And [1100-1300] User clicks on the williamS Checkout
 
 Examples:
-|gap Price Round|
-|gap First Price|
-|gap Second Price|
+|williamsS Price Round|
+|williamsS First Price|
+|williamsS Second Price|
 
 Scenario: Gap_Verify_TotalPriceOfProductr:Total price
 Given [8012-992] sleep time 3000
