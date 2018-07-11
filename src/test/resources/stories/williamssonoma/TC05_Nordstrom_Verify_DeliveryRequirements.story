@@ -3,8 +3,7 @@ Meta:
 @ReportName williamsS
 
 Scenario: WilliamsS_Verify_DeliveryRequirements(invalied values)
-
-Given [8012-992] sleep time 30000
+When [1111-1010] envoyId should be visible, Within 20 seconds
 When [1000-6010] Focus on Frame envoyId
 And [1100-1320] User scroll to the nordstrom Cuntinue Order
 And [1100-1300] User clicks on the nordstrom Cuntinue Order

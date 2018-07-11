@@ -19,7 +19,6 @@ And [1200-1302] For any element from nordstrom Products Card
 And [1101-1181] the user saves nordstrom Product Card Price text in global scope under name nordstrom Product Price
 And [1101-1181] the user saves nordstrom Product Card Name text in global scope under name nordstrom Product Name
 And [1100-0300] User click on it
-And [8012-993] User scroll 200 to laod items
 And [1111-1080] nordstrom PDP Img should be displayed, Within 120 seconds
 And [1101-1181] the user saves nordstrom PDP Card Name text in global scope under name nordstrom PDP Name
 And [1101-1181] the user saves nordstrom PDP Card Price text in global scope under name nordstrom PDP Price
