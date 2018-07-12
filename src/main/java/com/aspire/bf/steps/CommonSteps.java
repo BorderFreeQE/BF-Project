@@ -5,10 +5,13 @@ import java.util.Random;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
+import org.openqa.selenium.WebElement;
 import org.springframework.stereotype.Component;
 
 import com.aspire.automation.annotation.Steps;
 import com.aspire.automation.web.util.AspireBrowser;
+import com.aspire.automation.web.util.AspireWebElement;
+import com.aspire.automation.web.util.AspireWebElements;
 
 @Steps
 @Component
@@ -42,6 +45,22 @@ public class CommonSteps {
 
 
 		System.out.println("#########________"+getNumber+"_________#########");
+	}
+	
+
+	@Given("[8012-995] focus on fram by $elementName")
+	@Then("[8012-995] focus on fram by $elementName" )
+    @When("[8012-995] focus on fram by $elementName")
+	public void testFram(String framID) {
+		try {
+			AspireWebElement element = AspireBrowser.getElementByPropertyNameGlobaly("nordstromCuntinueOrder");
+			AspireBrowser.getLastAccessedPage().focusOnFrameHaveElement(element);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+		
 	}
 	
 }

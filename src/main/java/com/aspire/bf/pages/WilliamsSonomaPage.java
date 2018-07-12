@@ -117,11 +117,16 @@ public interface WilliamsSonomaPage {
 	public AspireWebElement williamSUpdate();
 	
 	@CssSelector("${williamSRemoveItem}")
-	public AspireWebElement williamSRemoveItem();		
+	public AspireWebElement williamSRemoveItem();	
 	
+	@CssSelector("${williamSFramID}")
+	public AspireWebElement williamSFramID();	
 	
+	@CssSelector("${williamSPostError}")
+	public AspireWebElement williamSPostError();
 	
-	
+	@CssSelector("${williamSPostInput}")
+	public AspireWebElement williamSPostInput();	
 	
 
 	
