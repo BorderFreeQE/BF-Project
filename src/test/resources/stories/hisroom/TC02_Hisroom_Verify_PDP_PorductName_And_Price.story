@@ -6,6 +6,7 @@ Scenario:  TC02_HisRoom_Verify_PDP_PorductName_And_Price
 Given [1000-9001] User on hisroom page
 When [1200-1302] For any element from hisroomTopNav
 And [1100-0400] Execute `click` javascript on the element
+And [8012-993] User scroll 400 to laod items
 And [1211-1080] hisroomProducts should be all displayed, Within 120 seconds
 And [1200-0302] For any of the elements
 And [1101-1181] the user saves hisroomProductName text in global scope under name hisroomProductName

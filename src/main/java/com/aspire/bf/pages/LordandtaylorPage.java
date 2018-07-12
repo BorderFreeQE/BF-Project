@@ -208,9 +208,11 @@ public interface LordandtaylorPage {
 	public AspireWebElement lordandtaylorSubmitError();
 	
 	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorQuickView}")
+	public AspireWebElement lordandtaylorQuickView();
 	
-	
-	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorProductItem}")
+	public AspireWebElements lordandtaylorProductItem();
 	
 	
 	
