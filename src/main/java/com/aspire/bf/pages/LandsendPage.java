@@ -6,31 +6,40 @@ import com.aspire.automation.web.util.annotation.CssSelector;
 import com.aspire.automation.web.util.annotation.Page;
 
 
-@Page(name = "landsend", url = "${pages.landsend.landsendurl}")
+@Page(name = "landsend", url = "${landsendurl}")
 
 public interface LandsendPage {
 
 	
-	@CssSelector("${pages.landsend.landsendWelcomeMat}")
+	@CssSelector("${landsendWelcomeMat}")
 	public AspireWebElement landsendWelcomeMat();
 	
-	@CssSelector("${pages.landsend.landsendWelcomeMatClose}")
+	@CssSelector("${landsendWelcomeMatClose}")
 	public AspireWebElement landsendWelcomeMatClose();
 	
-	@CssSelector("${pages.landsend.landsendTopNav}")
+	@CssSelector("${landsendTopNav}")
 	public AspireWebElements landsendTopNav();
 	
-	@CssSelector("${pages.landsend.landsendSales}")
+	@CssSelector("${landsendSales}")
 	public AspireWebElements landsendSales();
 	
-	@CssSelector("${pages.landsend.landsendProducts}")
+	@CssSelector("${landsendProducts}")
 	public AspireWebElements landsendProducts();
 	
-	@CssSelector("${pages.landsend.landsendProductName}")
+	@CssSelector("${landsendProductName}")
 	public AspireWebElement landsendProductName();
 	
-	@CssSelector("${pages.landsend.landsendProductPrice}")
+	@CssSelector("${landsendProductPrice}")
 	public AspireWebElement landsendProductPrice();
+	
+	@CssSelector("${landsendShappingTo}")
+	public AspireWebElement landsendShappingTo();
+	
+	@CssSelector("${landsendSelectCountry}")
+	public AspireWebElement landsendSelectCountry();
+	
+	@CssSelector("${landsendSaveContinue}")
+	public AspireWebElement landsendSaveContinue();
 	
 	
 	

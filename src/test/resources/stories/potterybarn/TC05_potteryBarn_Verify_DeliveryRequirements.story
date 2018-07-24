@@ -1,8 +1,8 @@
 Meta:
 
-@ReportName williamsS
+@ReportName potteryBarn
 
-Scenario: WilliamsS_Verify_DeliveryRequirements(invalied values)
+Scenario: potteryBarn_Verify_DeliveryRequirements(invalied values)
 Given [8012-992] sleep time 2000
 When [8012-995] focus on fram by test
 And [1100-1585] the user saves williamSFramID attribute of src in example scope under name williamS Fram URL

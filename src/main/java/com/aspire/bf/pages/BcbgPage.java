@@ -173,4 +173,15 @@ public interface BcbgPage {
 	
 	
 	
+	
+	/////#########_______ Mobile Element Selectors _______##########////////
+	
+	@CssSelector("${mobileBcbgPdpName}")
+	public AspireWebElement mobileBcbgPdpName();
+	
+	
+	@CssSelector("${mobileBcbgShippingContinue}")
+	public AspireWebElement mobileBcbgShippingContinue();
+	
+	
 }

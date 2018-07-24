@@ -4,9 +4,10 @@ Meta:
 Scenario:  Nordstrom_Verify_Pre-RequestOrder
 
 Given [1000-9001] User on nordstrom page
-When [1200-1302] For any element from nordstrom Category Product
-!-- And [1100-0581] the user saves its attribute of href in global scope under name nordstrom category URL
+And [8012-992] sleep time 9000
+!-- When [1200-1302] For any element from nordstrom Category Product
 Then [1000-9110] User navigate to `directPage` URL
+!-- And [1100-0581] the user saves its attribute of href in global scope under name nordstrom category URL
 !-- When [8012-993] User scroll 700 to laod items
 !-- And [8012-992] sleep time 3000
 !-- And [1200-1302] For any element from nordstrom Category Product Chilren

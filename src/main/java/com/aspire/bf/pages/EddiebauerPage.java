@@ -182,7 +182,16 @@ public interface EddiebauerPage {
 	
 	
 	
+	/////////////____ Mobile Element____///////
 	
+	@CssSelector("${mobileEdditbureHumbuger}")
+	public AspireWebElement mobileEdditbureHumbuger();
+	
+	@CssSelector("${mobileEdditbureMainList}")
+	public AspireWebElements mobileEdditbureMainList();
+	
+	@CssSelector("${mobileEdditbureChialdList}")
+	public AspireWebElements mobileEdditbureChialdList();
 	
 	
 	

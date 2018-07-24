@@ -30,7 +30,7 @@ And [1100-1400] Execute `click` javascript on partycityCheckoutContinue
 And [8006-0010] sleep after last action for 3000 Milliseconds
 And [1100-1400] Execute `click` javascript on partycityPalceOrderButton
 And [1000-6010] Focus on Frame cc-frame
-And [8006-0010] sleep after last action for 2000 Milliseconds
+And [8006-0010] sleep after last action for 20000 Milliseconds
 And [1101-1102] partycityPaymentCardNumberError text is equal to Card number is required case sensitive
 And [1101-1102] partycityPaymentExpirationDateError text is equal to Expiration date is required case sensitive
 And [1101-1102] partycityPaymentSecurityCodeError text is equal to Security code is required case sensitive

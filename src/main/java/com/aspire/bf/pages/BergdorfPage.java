@@ -178,4 +178,12 @@ public interface BergdorfPage {
 	
 	
 	
+	
+	/////#########_______ Mobile Element Selectors _______##########////////
+
+	@CssSelector("${mobileBergdorfTopNav}")
+	public AspireWebElement mobileBergdorfTopNav();
+	
+	
+	
 }

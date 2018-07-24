@@ -8,5 +8,7 @@ Then [1000-9110] User navigate to `bagSection` URL
 When [1111-1080] nordstrom Bag Item Img should be displayed, Within 120 seconds
 And [1100-1340] User fills nordsrom Update Quantity Of Item with 2
 And [1100-1300] User clicks on the nordstrom Update Item
-!-- And [1111-1020] nordstrom Update Item should not be visible, Within 120 seconds
-Then [5101-1106] verify that text nordsromQuantityPricesOfItem has index of `nordstrom Cart Product Price`+`nordstrom Cart Product Price`
+And [1101-1181] the user saves nordstrom Bag Item Price text in global scope under name nordstrom Item Price
+And [8008-0003] User hits nordstrom Item Price with 2
+Then [1101-1184] the user saves nordstrom BagItem Total Price text in scenario scope under name nordstrom Total Price
+And [8028-0003] User compare between `nordstrom Cart Price` and `nordstrom Total Price`

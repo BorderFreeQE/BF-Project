@@ -38,6 +38,8 @@ And [1100-1601] Select eddiebauerExpirationMonth By Value 01
 And [1100-1601] Select eddiebauerExpirationYear By Value 2027
 And [1100-1340] User fills eddiebauerSecurityCode with `paymentSecurityCode`
 And [1100-1400] Execute `click` javascript on eddiebauerShippingContinue
+And [8017-0001] sleep after last action for 3000 Milliseconds
+And [1100-1400] Execute `click` javascript on eddiebauerSubmitOrder
 Then [1111-1080] eddiebauerSubmitError should be displayed, Within 120 seconds
 And [1000-9140] Close the browser
 

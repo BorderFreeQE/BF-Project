@@ -47,7 +47,14 @@ public class CommonSteps {
 		System.out.println("#########________"+getNumber+"_________#########");
 	}
 	
-
+	  @When("[8012-9783] verfiy that text $textA and text $textB are equals")
+		public void textText(String textA,String textB) {
+if (textA.toLowerCase().trim().equals(textB.toLowerCase().trim())) {
+	System.out.println("########======IT IS EQUALS========########");
+}
+		  
+		}
+		
 	@Given("[8012-995] focus on fram by $elementName")
 	@Then("[8012-995] focus on fram by $elementName" )
     @When("[8012-995] focus on fram by $elementName")

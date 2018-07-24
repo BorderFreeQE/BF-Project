@@ -8,4 +8,11 @@ When [1000-3000] User maximize browser window
 And [1000-9000] User opens landsend page
 And [1111-1080] landsendWelcomeMat should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the landsendWelcomeMatClose
+And [1000-9300] User refresh the page
+And [1100-1300] User clicks on the landsend Shapping To
+And [1111-1080] landsend Select Country should be displayed, Within 120 seconds
+And [1100-1601] Select landsend Select Country By Value NZ
+And [1100-1300] User clicks on the landsend Save Continue
+And [8012-992] sleep time 2000
+And [1000-9300] User refresh the page
 Then [1201-1080] landsendTopNav should be all displayed
