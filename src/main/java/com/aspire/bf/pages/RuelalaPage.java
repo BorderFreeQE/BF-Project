@@ -133,11 +133,8 @@ public interface RuelalaPage {
 	@IDSelector("${pages.ruelala.ruelalaPaymentCardNumber}")
 	public AspireWebElement ruelalaPaymentCardNumber();
 	
-	@IDSelector("${pages.ruelala.ruelalaPaymentCardExpirationMonth}")
-	public AspireWebElement ruelalaPaymentCardExpirationMonth();
-	
-	@IDSelector("${pages.ruelala.ruelalaPaymentCardExpirationYear}")
-	public AspireWebElement ruelalaPaymentCardExpirationYear();
+	@CssSelector("${ruelalaPaymentCardExpirationM_Y}")
+	public AspireWebElement ruelalaPaymentCardExpirationM_Y();
 	
 	@IDSelector("${pages.ruelala.ruelalaPaymentSecurityCode}")
 	public AspireWebElement ruelalaPaymentSecurityCode();
@@ -148,8 +145,23 @@ public interface RuelalaPage {
 	@CssSelector("${pages.ruelala.ruelalaBagPage}")
 	public AspireWebElement ruelalaBagPage();
 	
+	@CssSelector("${ruelalaRegisterShippingCountry}")
+	public AspireWebElement ruelalaRegisterShippingCountry();
+	
+	
 	@IDSelector("${pages.ruelala.ruelalaCheckoutEmail}")
 	public AspireWebElement ruelalaCheckoutEmail();
 	
+	
+	/////////______ Mobile Element
+	
+	
+	@CssSelector("${mobileRuelalaCheckout}")
+	public AspireWebElement mobileRuelalaCheckout();
+	
+	
+	@CssSelector("${mobileRuelalaContiue}")
+	public AspireWebElement mobileRuelalaContiue();
+		
 	
 }

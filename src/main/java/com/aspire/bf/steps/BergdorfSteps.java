@@ -39,6 +39,10 @@ public class BergdorfSteps {
 	
 	@When("[8012-0002] user randomly select an available $element")
 	public void randomselect(String element)
+	//mobile/desktop 
+	//element Name
+	//has select size
+	
 	{
 		try
 		{   
@@ -54,6 +58,13 @@ public class BergdorfSteps {
 		catch (NoSuchElementException e)
 		{
 			System.out.println("Catch");
+		}
+	}
+	
+	@When("[8012-9102] user select size for $elementName randomly has first index select size $index")
+	public void selectSize(String elementName, boolean index) {
+		if (index==false){
+			
 		}
 	}
 	

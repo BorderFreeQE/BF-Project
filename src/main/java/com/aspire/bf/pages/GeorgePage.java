@@ -175,23 +175,47 @@ public interface GeorgePage {
     
     
     
+	//#######________ Mobile Elements
+	@CssSelector("${mobileGeorgeProducts}")
+	public AspireWebElements mobileGeorgeProducts();
+
+	@CssSelector("${mobileGeorgeName}")
+	public AspireWebElement mobileGeorgeName();
+	
+	@CssSelector("${mobileGeorgePrice}")
+	public AspireWebElement mobileGeorgePrice();
+
+	
+	@CssSelector("${mobileGeorgePDPPage}")
+	public AspireWebElement mobileGeorgePDPPage();
     
+	
+	@CssSelector("${mobileGeorgePdpPrice}")
+	public AspireWebElement mobileGeorgePdpPrice();
     
+
+	@CssSelector("${mobileGeorgeSizes}")
+	public AspireWebElement mobileGeorgeSizes();
+	
     
+	@CssSelector("${mobileGeorgeAddToBasket}")
+	public AspireWebElement mobileGeorgeAddToBasket();
+	 
+	@CssSelector("${mobileGeorgeCartIcon}")
+	public AspireWebElement mobileGeorgeCartIcon();
+	
+	
+	@CssSelector("${mobileGeorgeEditButton}")
+	public AspireWebElement mobileGeorgeEditButton();
     
+	
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+	@CssSelector("${mobileGeorgeCartQuantity}")
+	public AspireWebElement mobileGeorgeCartQuantity();
+	
+	@CssSelector("${mobileGeorgecloseEditDialog}")
+	public AspireWebElement mobileGeorgecloseEditDialog();
+	
     
     
     

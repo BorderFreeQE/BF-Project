@@ -10,7 +10,7 @@ aspire:
         url: https://omaraspire1:psaTpDqUXqS7py41dYjT@hub-cloud.browserstack.com/wd/hub
         type: saucelab
       local:
-        security-test: false
+        security-test: true
         proxy:
           enabled: false
           port: 8080
@@ -145,21 +145,23 @@ aspire:
  
       capabilities:
         browser : ie
-        browser_version : 58.0
-        os : OS X
-        os_version: Sierra
+        browser_version : 41.16
+        os : windows
+        os_version: windows 10
         project : WEB ASPIRE TEMPLATE TEST
         acceptSslCerts : true
         browserstack.debug : true
       preferences:
         profile.default_content_settings.popups : 0
         profile.default_content_setting_values.notifications : 2
-        download.default_directory : /Users/malzurqan/Documents/Temp 
+        download.default_directory : Users\aziyadeh\Documents
       arguments:
       - start-maximized
       - disable-popup-blocking
       - test-type
       - --disable-extensions  
+   
+   
     edge: 
       enabled: false
       name: edge

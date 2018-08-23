@@ -194,43 +194,135 @@ public interface EddiebauerPage {
 	public AspireWebElements mobileEdditbureChialdList();
 	
 	
+	@CssSelector("${mobileEddiebauerProductName}")
+	public AspireWebElement mobileEddiebauerProductName();
+	
+	@CssSelector("${mobileEddiebauerProductPrice}")
+	public AspireWebElement mobileEddiebauerProductPrice();
+	
+	@CssSelector("${mobileEddiebauerBagPage}")
+	public AspireWebElement mobileEddiebauerBagPage();	
+	
+	
+	@CssSelector("${mobileEddiebauerBagPrice}")
+	public AspireWebElement mobileEddiebauerBagPrice();	
 	
 	
 	
+	@CssSelector("${mobileEddiebauerQuickView}")
+	public AspireWebElement mobileEddiebauerQuickView();		
+	
+		
+	@CssSelector("${mobileEddiebauerQuickViewCheckout}")
+	public AspireWebElement mobileEddiebauerQuickViewCheckout();		
+	
+	
+	@CssSelector("${mobileEddiebauerBagItemOnePrice}")
+	public AspireWebElement mobileEddiebauerBagItemOnePrice();		
+	
+	
+	@CssSelector("${mobileEddiebauerBagItemTwoPrice}")
+	public AspireWebElement mobileEddiebauerBagItemTwoPrice();		
 	
 	
 	
+	@CssSelector("${mobileEddiebauerBagTotelPrice}")
+	public AspireWebElement mobileEddiebauerBagTotelPrice();		
+	
+	@CssSelector("${mobileFirstNameError}")
+	public AspireWebElement mobileFirstNameError();
+	
+	@CssSelector("${mobileLastNameError}")
+	public AspireWebElement mobileLastNameError();	
+	
+	@CssSelector("${mobileAddressError}")
+	public AspireWebElement mobileAddressError();	
+	
+	@CssSelector("${mobileZipCodeError}")
+	public AspireWebElement mobileZipCodeError();	
+	
+	@CssSelector("${mobileCountryError}")
+	public AspireWebElement mobileCountryError();	
+	
+	@CssSelector("${mobileCityError}")
+	public AspireWebElement mobileCityError();
+	
+	@CssSelector("${mobileStateError}")
+	public AspireWebElement mobileStateError();	
+	
+	@CssSelector("${mobileEmailAddressError}")
+	public AspireWebElement mobileEmailAddressError();	
+	
+	@CssSelector("${mobilePhoneNumberError}")
+	public AspireWebElement mobilePhoneNumberError();	
+	
+	@CssSelector("${mobileCardNumberError}")
+	public AspireWebElement mobileCardNumberError();	
+	
+	@CssSelector("${mobileExpirationError}")
+	public AspireWebElement mobileExpirationError();
+	
+	@CssSelector("${mobileEdditbureProductList}")
+	public AspireWebElements mobileEdditbureProductList();
+		
 	
 	
 	
+	@CssSelector("${mobileFirstName}")
+	public AspireWebElement mobileFirstName();
+	
+	@CssSelector("${mobileLastName}")
+	public AspireWebElement mobileLastName();
+	
+	@CssSelector("${mobileAddress}")
+	public AspireWebElement mobileAddress();
+	
+	@CssSelector("${mobileZipCode}")
+	public AspireWebElement mobileZipCode();
+	
+	@CssSelector("${mobileCountry}")
+	public AspireWebElement mobileCountry();
+	
+	@CssSelector("${mobileCity}")
+	public AspireWebElement mobileCity();
+	
+	@CssSelector("${mobileState}")
+	public AspireWebElement mobileState();
+	
+	@CssSelector("${mobileEmailAddress}")
+	public AspireWebElement mobileEmailAddress();
+	
+	@CssSelector("${mobilePhoneNumber}")
+	public AspireWebElement mobilePhoneNumber();
+	
+	@CssSelector("${mobileCardNumber}")
+	public AspireWebElement mobileCardNumber();
+	
+	@CssSelector("${mobileExpirationMonth}")
+	public AspireWebElement mobileExpirationMonth();
+	
+	@CssSelector("${mobileExpirationYear}")
+	public AspireWebElement mobileExpirationYear();
+	
+	@CssSelector("${mobileSecurityCode}")
+	public AspireWebElement mobileSecurityCode();
+	
+	
+	@CssSelector("${mobileSubmitOrderError}")
+	public AspireWebElement mobileSubmitOrderError();	
 	
 	
 	
+
+	@CssSelector("${mobileCounitnuePaymentProcess}")
+	public AspireWebElement mobileCounitnuePaymentProcess();
 	
 	
+	@CssSelector("${mobileCountinueShopping}")
+	public AspireWebElement mobileCountinueShopping();
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@CssSelector("${mobileSubmitOrder}")
+	public AspireWebElement mobileSubmitOrder();
 	
 	
 	

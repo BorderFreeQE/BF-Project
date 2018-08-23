@@ -28,8 +28,8 @@ public interface BergdorfPage {
 	@CssSelector("${pages.bergdorf.bergdorfValidPdp}")
 	public AspireWebElement bergdorfValidPdp();
 	
-	@CssSelector("${pages.bergdorf.bergdorfSku}")
-	public AspireWebElement bergdorfSku();
+	@CssSelector("${pages.bergdorf.bergdorfSize}")
+	public AspireWebElement bergdorfSize();
 	
 	@CssSelector("${pages.bergdorf.bergdorfAddToshoppingBag}")
 	public AspireWebElement bergdorfAddToshoppingBag();
@@ -184,6 +184,23 @@ public interface BergdorfPage {
 	@CssSelector("${mobileBergdorfTopNav}")
 	public AspireWebElement mobileBergdorfTopNav();
 	
+	
+	@CssSelector("${mobileBergdorfShippingTo}")
+	public AspireWebElement mobileBergdorfShippingTo();
+	
+	@CssSelector("${mobileBergdorfInputCountriButton}")
+	public AspireWebElement mobileBergdorfInputCountriButton();
+	
+	@CssSelector("${mobileBergdorfNavURL}")
+	public AspireWebElements mobileBergdorfNavURL();
+	
+	
+	@CssSelector("${mobileBergdorfCheckout}")
+	public AspireWebElement mobileBergdorfCheckout();
+	
+	
+	@CssSelector("${mobileBergdorfBagTotalPrice}")
+	public AspireWebElement mobileBergdorfBagTotalPrice();	
 	
 	
 }

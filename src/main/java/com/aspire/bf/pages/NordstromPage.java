@@ -180,5 +180,18 @@ public interface NordstromPage {
 	@CssSelector("${nordsromQuantityPricesOfItem}")
 	public AspireWebElement nordsromQuantityPricesOfItem();
 	
+	
+	
+	//_____ mobile Element
+	
+	
+	@CssSelector("${mobileOnordstromProductsCard}")
+	public AspireWebElements mobileOnordstromProductsCard();	
 
+	@CssSelector("${mobileNordstromProductCardPrice}")
+	public AspireWebElement mobileNordstromProductCardPrice();
+	
+	@CssSelector("${mobileNordstromProductCardName}")
+	public AspireWebElement mobileNordstromProductCardName();
 }
+

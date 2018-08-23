@@ -73,8 +73,8 @@ public interface PacsunPage {
 	@CssSelector("${pages.pacsun.pacsunSize}")
 	public AspireWebElements pacsunSize();
 	
-	@CssSelector("${pages.pacsun.pacsunSizeIcon}")
-	public AspireWebElement pacsunSizeIcon();
+	@CssSelector("${pages.pacsun.pacsunSizeLabel}")
+	public AspireWebElement pacsunSizeLabel();
 	
 	@CssSelector("${pages.pacsun.pacsunAddToCart}")
 	public AspireWebElement pacsunAddToCart();
@@ -192,12 +192,21 @@ public interface PacsunPage {
 	
 	@IDSelector("${pages.pacsun.pacsunCheckoutSubmitError}")
 	public AspireWebElement pacsunCheckoutSubmitError();
+		
+
 	
 	
+	//_______ Mobile Elements
+	
+	@CssSelector("${pages.pacsun.pacsunSizeList}")
+	public AspireWebElement pacsunSizeList();
 	
 	
+	@CssSelector("${pacsunSizeOptions}")
+	public AspireWebElements pacsunSizeOptions();
 	
-	
+	@CssSelector("${pacsunSubmitMassage}")
+	public AspireWebElement pacsunSubmitMassage();
 	
 	
 	

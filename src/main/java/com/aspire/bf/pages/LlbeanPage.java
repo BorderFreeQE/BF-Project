@@ -202,6 +202,7 @@ public interface LlbeanPage {
 	public AspireWebElement llbeanShipToDialogClose();
 	
 	
-	
+	@CssSelector("${mobileLlbeanAlertDailog}")
+	public AspireWebElement mobileLlbeanAlertDailog();
 	
 }

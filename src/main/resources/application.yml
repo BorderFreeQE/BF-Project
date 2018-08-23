@@ -10,48 +10,38 @@ aspire:
     stories:
       defaultloader:
         enabled: true   
-        include: 
-          - stories/bcbg/**.story
-          - stories/eddiebauer/**.story
-          - stories/bergdorf/**.story
-          - stories/ebags/**.story
-          - stories/williamssonoma/**.story
-          - stories/eddiebauer/**.story
-          - stories/george/**.story
-          - stories/herroom/**.story
-          - stories/hisroom/**.story
-          - stories/lastcall/**.story
-          - stories/llbean/**.story
-          - stories/lordandtaylor/**.story 
-          - stories/neimanmarcus/**.story
-          - stories/nordstrom/**.story
-          - stories/pacsun/**.story
-          - stories/partycitycanada/**.story
-          - stories/ruelala/**.story
-          - stories/saks/**.story
-          - stories/saksoff/**.story
-          - stories/underarmour/**.story
-          - stories/williamssonoma/**.story
-          - stories/potterybarn/**.story
-#          - stories/sephora/**.story
-#          - stories/lanebryant/**.story
-#          - stories/landsend/**.story
-#          - stories/harrods/**.story
-#          - stories/gilt/**.story
-#          - stories/generalpants/**.story
-#          - stories/barneys/**.story
-#          - stories/gap/*.story
-          
+        include:
+#          - stories/desktop_web/bcbg/**.story
+#          - stories/mobile_web/**/**.story
+###          - stories/mobile_web/ebags/**.story
+###          - stories/mobile_web/lastcall/**.story
+###          - stories/mobile_web/underarmour/**.story
+#          - stories/mobile_web/neimanmarcus/**.story
+#          - stories/mobile_web/bcbg/**.story
+#          - stories/mobile_web/eddiebauer/**.story
+#          - stories/mobile_web/lordandtaylor/**.story 
+#          - stories/mobile_web/saksoff/**.story 
+#          - stories/mobile_web/nordstrom/**.story
+#          - stories/mobile_web/pacsun/**.story
+#          - stories/mobile_web/bergdorf/**.story
+#          - stories/mobile_web/saks/**.story
+#          - stories/mobile_web/ruelala/**.story
+#          - stories/mobile_web/llbean/**.story
+#          - stories/mobile_web/partycitycanada/**.story
+          - stories/mobile_web/harrods/**.story
+
+
+
   webdriver:
-    strategy: mixed
-    scope: scenario
-    default-driver-name: firefox
+    scope: restart
+    strategy: MIXED
+    default-driver-name: android 
     android:
       name: android
-      enabled: false
+      enabled: true
       run-on: virtual-device
       remote:
-       enabled: true
+       enabled: false
        user: jnassar
        key: 93b9389d-4700-49f4-98fd-dd460a5c750b
        use-last-modified-file: false
@@ -60,21 +50,28 @@ aspire:
        type: saucelab
       capabilities:
         platformName: Android
-        platformVersion: 7.1
+        platformVersion: 8.0
         deviceName: Samsung Galaxy S7 Edge GoogleAPI Emulator
         fullReset: false
-        deviceOrientation: portrait
         autoGrantPermissions: true
-        browserName: Chrome
-        appiumVersion: 1.7.2
+        autoAcceptAlerts: true
+        browserName: Chrome 
+        appiumVersion: 1.8.1
+        timeoutInSeconds: 6000
+        maxDuration: 1800
+        newCommandTimeout: 60000
+        timeout-in-seconds: 1800
         
         
   mobile:
     appium:
       localservice:
         strategy: fixed-provided
-        number-of-services: 1
-        kill-all-node-services-before-start: true        
+        connected-device-command: C:\Users\aziyadeh\AppData\Local\Android\Sdk\platform-tools\adb.exe
+        auto-lunch: true
+        node-path: C:\Program Files\nodejs\node.exe
+        appium-j-s-file-path: C:\Users\aziyadeh\AppData\Roaming\npm\node_modules\appium\build\lib\main.js
+        windows-kill-node-command: taskkill \f \im node.exe  
            
   screenshot:
     enabled: true

@@ -211,6 +211,23 @@ public interface NeimanMarcusPage {
 	@CssSelector("${pages.neimanmarcus.neimanmarcusCheckoutSubmitError}")
 	public AspireWebElement neimanmarcusCheckoutSubmitError();
 	
+	@CssSelector("${neimanmarcusContinueCheckOut}")
+	public AspireWebElement neimanmarcusContinueCheckOut();
+	
+	//____ Mobile Elements
+	
+	
+	@CssSelector("${mobileNeimanmarcusContinueCheckOut}")
+	public AspireWebElement mobileNeimanmarcusContinueCheckOut();
+	
+	
+	@CssSelector("${mobileNeimanmarcusBagCheckout}")
+	public AspireWebElement mobileNeimanmarcusBagCheckout();
+		
+
+	@CssSelector("${mobileNeimanmarcusPlaceOrder}")
+	public AspireWebElement mobileNeimanmarcusPlaceOrder();
+	
 	
 	
 	
