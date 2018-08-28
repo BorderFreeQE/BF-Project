@@ -4,7 +4,7 @@ Meta:
 Scenario: TC06_Lastcall_Add_Multiple_Products_To_Cart_From_Different_Categories_And_Verify_Sum_Is_Correct
 
 Given [1101-1080] lastcallBagPage should be displayed
-When [8012-399] Navigate to `landsend Direct URL` page
+When [8012-399] Navigate to `lastcall Direct URL` page
 And [8012-993] User scroll 700 to laod items
 And [1211-1080] lastcallProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from lastcallProducts

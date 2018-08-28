@@ -37,5 +37,5 @@ And [1100-1340] User fills bergdorfCheckoutCardNumber with `paymentCardNumber`
 And [1100-1340] User fills bergdorfCheckoutExpirationDate with `paymentExpirationDate`
 And [1100-1340] User fills bergdorfCheckoutSecurityCode with `paymentSecurityCode`
 And [1000-6020] Focus on parent Frame
-And [1100-1300] User clicks on the bergdorfCheckoutPlaceOrder
+And [1100-1300] User clicks on the mobile Bergdorf Checkout Place Order
 Then [1111-1080] bergdorfCheckoutSubmitError should be displayed, Within 120 seconds

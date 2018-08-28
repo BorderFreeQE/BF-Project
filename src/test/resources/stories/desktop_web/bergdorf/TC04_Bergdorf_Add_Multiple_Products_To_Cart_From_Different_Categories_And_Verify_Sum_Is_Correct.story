@@ -16,8 +16,7 @@ And [1200-1302] For any element from bergdorfProducts
 And [1100-0300] User click on it
 And [1111-1080] bergdorfProductPage should be displayed, Within 120 seconds
 And [8012-0001] user search for bergdorfValidPdp
-And [8012-0002] user randomly select an available bergdorfSku
-And [8012-0002] user randomly select an available bergdorfColor
+And [8012-9784] user take a look the page contents color bergdorfColor by index 1, size bergdorfSize by index 1, or both
 And [1100-1300] User clicks on the bergdorfAddToshoppingBag
 And [1100-1300] User clicks on the bergdorfBagCheckout
 Then [1111-1080] bergdorfBagPage should be displayed, Within 120 seconds

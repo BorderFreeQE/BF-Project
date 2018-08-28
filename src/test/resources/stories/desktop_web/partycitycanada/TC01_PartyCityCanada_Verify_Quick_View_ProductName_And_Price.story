@@ -6,12 +6,9 @@ Scenario:  TC01_PartyCityCanada_Verify_Quick_View_ProductName_And_Price
 Given [1000-9130] Clear cache and cookies
 When [1000-3000] User maximize browser window
 And [1000-9000] User opens partycity page
-And [1200-1302] For any element from partycityTopNavCat
-And [1100-0400] Execute `click` javascript on the element
-And [1200-1302] For any element from partycityTopNavSubCat
-And [1100-0400] Execute `click` javascript on the element
+And [1100-1300] User clicks on the partycityCategoryButton
 And [1200-1302] For any element from partycityCategory
-And [1100-0400] Execute `click` javascript on the element
+And [1100-0300] User click on it
 And [8019-0002] user search for partycityPlp
 And [1200-1302] For any element from partycityProducts
 And [1101-1181] the user saves partycityProductName text in global scope under name partycityProductName

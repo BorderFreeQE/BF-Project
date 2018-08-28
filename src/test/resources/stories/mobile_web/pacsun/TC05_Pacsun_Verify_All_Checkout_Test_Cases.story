@@ -29,7 +29,6 @@ And [1100-1340] User fills pacsunCheckoutSecurityCode with `paymentSecurityCode`
 And [1000-6020] Focus on parent Frame
 And [1100-1400] Execute `click` javascript on pacsunPlaceOrder
 Then [1111-1080] pacsunCheckoutSubmitError should be displayed, Within 120 seconds
-And [1000-9140] Close the browser
 
 
 

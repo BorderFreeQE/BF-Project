@@ -52,5 +52,3 @@ And [8002-0008] `saksOrderTotal` price should be matched with the summation of `
 And [1100-1340] User fills saksSecurityCode with `paymentSecurityCode`
 And [1100-1400] Execute `click` javascript on saksPlaceOrderButton
 Then [1111-1080] saksSubmitErrorMessage should be displayed, Within 120 seconds
-And [1000-9140] Close the browser
-

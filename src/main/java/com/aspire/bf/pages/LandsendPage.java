@@ -42,18 +42,144 @@ public interface LandsendPage {
 	public AspireWebElement landsendSaveContinue();
 	
 	
+	//PDP
+	
+	@CssSelector("${landsendPDPImg}")
+	public AspireWebElement landsendPDPImg();
+	
+	@CssSelector("${landsendPDPName}")
+	public AspireWebElement landsendPDPName();
+	
+	@CssSelector("${landsendPDPPrice}")
+	public AspireWebElement landsendPDPPrice();
+	
+	
+	@CssSelector("${landsendPDPAddToCart}")
+	public AspireWebElement landsendPDPAddToCart();
+	
+	@CssSelector("${landsendSizeRange}")
+	public AspireWebElements landsendSizeRange();
+
+	@CssSelector("${landsendSize}")
+	public AspireWebElements landsendSize();
+	
+	
+	//PDP Dialog
+	@CssSelector("${landsendBagDialog}")
+	public AspireWebElement landsendBagDialog();
+	
+	@CssSelector("${landsendCheckOut}")
+	public AspireWebElement landsendCheckOut();
+	
+	@CssSelector("${landsendDialogProductName}")
+	public AspireWebElement landsendDialogProductName();
+	
+	@CssSelector("${landsendDialogProductPrice}")
+	public AspireWebElement landsendDialogProductPrice();
+	
+	@CssSelector("${landsendStartCheckOut}")
+	public AspireWebElement landsendStartCheckOut();
+	
+	@CssSelector("${landsendGuestCheckout}")
+	public AspireWebElement landsendGuestCheckout();
 	
 	
 	
+	//cart page
+	
+	@CssSelector("${landsendEdit}")
+	public AspireWebElement landsendEdit();
+	
+	@CssSelector("${landsendQuantityInput}")
+	public AspireWebElement landsendQuantityInput();
+	
+	@CssSelector("${landsendUpdateItem}")
+	public AspireWebElement landsendUpdateItem();
+	
+	@CssSelector("${landsendCartPrice}")
+	public AspireWebElement landsendCartPrice();
+	
+	@CssSelector("${landsendTotalPrice}")
+	public AspireWebElement landsendTotalPrice();
+	
+	@CssSelector("${landsendRemove}")
+	public AspireWebElement landsendRemove();
+	
+	@CssSelector("${landsendItem}")
+	public AspireWebElement landsendItem();
+	
+	
+	//payment process
+	
+	@CssSelector("${landsendCheckOutModule}")
+	public AspireWebElement landsendCheckOutModule();
+	@CssSelector("${landsend FirstNameError}")
+	public AspireWebElement landsendFirstNameError();
+	
+	@CssSelector("${landsendLastNameError}")
+	public AspireWebElement landsendLastNameError();
+	
+	@CssSelector("${landsendAddressError}")
+	public AspireWebElement landsendAddressError();
+	
+	@CssSelector("${landsendFirstName}")
+	public AspireWebElement landsendFirstName();
+	
+	@CssSelector("${landsendLastName}")
+	public AspireWebElement landsendLastName();
+	
+	@CssSelector("${landsendAddress}")
+	public AspireWebElement landsendAddress();
+	
+	@CssSelector("${landsendCity}")
+	public AspireWebElement landsendCity();
+	
+	@CssSelector("${landsendPostCode}")
+	public AspireWebElement landsendPostCode();
+	
+	@CssSelector("${landsendContinue}")
+	public AspireWebElement landsendContinue();
+	
+	
+	@CssSelector("${landsendCardNumberError}")
+	public AspireWebElement landsendCardNumberError();
+	
+	
+	@CssSelector("${landsendDateError}")
+	public AspireWebElement landsendDateError();
+	
+	@CssSelector("${landsendCardNumber}")
+	public AspireWebElement landsendCardNumber();
+	
+	@CssSelector("${landsendEmail}")
+	public AspireWebElement landsendEmail();
+	
+	@CssSelector("${landsendPhone}")
+	public AspireWebElement landsendPhone();
+	
+	@CssSelector("${landsendDateMonth}")
+	public AspireWebElement landsendDateMonth();
+	
+	@CssSelector("${landsendDateYear}")
+	public AspireWebElement landsendDateYear();
+	
+	
+	@CssSelector("${landsendSecurityCode}")
+	public AspireWebElement landsendSecurityCode();
+	
+	
+	@CssSelector("${landsendPlaceOrder}")
+	public AspireWebElement landsendPlaceOrder();
+	
+	@CssSelector("${landsendErrorMessage}")
+	public AspireWebElement landsendErrorMessage();
+	
+	@CssSelector("${landsendModalContent}")
+	public AspireWebElement landsendModalContent();
 	
 	
 	
-	
-	
-	
-	
-	
-	
+
 	
 	
 	

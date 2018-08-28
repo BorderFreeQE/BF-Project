@@ -13,6 +13,6 @@ And [1100-1581] the user saves eddiebauerQuickViewImage attribute of src in glob
 And [1101-1181] the user saves eddiebauerQuickViewName text in global scope under name eddiebauerQuickViewName
 And [5100-2106] convert text `eddiebauerPdpName` to lower and tag it as eddiebauerPdpNameL
 And [5100-2106] convert text `eddiebauerQuickViewName` to lower and tag it as eddiebauerQuickViewNameL
-Then [5101-1102] verify that text `eddiebauerPdpNameL` contains `eddiebauerQuickViewNameL`
+Then [8012-9783] verfiy that text `eddiebauerPdpName` and text `eddiebauerQuickViewNameL` are equals
 And [8017-0002] verify that the value of `eddiebauerPdpPrice` equals to the value of `eddiebauerQuickViewPrice`
 And [8014-0004] user compare between `eddiebauerProductImage` , `eddiebauerPdpImage` and `eddiebauerQuickViewImage`

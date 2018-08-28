@@ -265,7 +265,11 @@ public interface EddiebauerPage {
 	@CssSelector("${mobileEdditbureProductList}")
 	public AspireWebElements mobileEdditbureProductList();
 		
+	@CssSelector("${mobilEddtiebauernPDPName}")
+	public AspireWebElement mobilEddtiebauernPDPName();
 	
+	@CssSelector("${mobilEddtiebauernPDPPrice}")
+	public AspireWebElement mobileFirstPrice();
 	
 	
 	@CssSelector("${mobileFirstName}")

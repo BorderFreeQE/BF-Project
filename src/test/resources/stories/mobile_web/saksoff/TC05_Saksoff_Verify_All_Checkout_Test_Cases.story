@@ -54,5 +54,3 @@ And [8003-0008] `saksoffOrderTotal` price should be matched with the summation o
 And [1100-1340] User fills saksoffSecurityCode with `paymentSecurityCode`
 And [1100-1400] Execute `click` javascript on saksoffPlaceOrderButton
 Then [1111-1080] saksoffSubmitErrorMessage should be displayed, Within 120 seconds
-And [1000-9140] Close the browser
-

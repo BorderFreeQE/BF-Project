@@ -2,10 +2,9 @@ Meta:
 
 @ReportName williamsS
 
-Scenario: WilliamsS_Verify_TotalPriceOfProductr
 
-Scenario: Gap_Verify_TotalPriceOfProductr
-Then [1000-9110] User navigate to `williamSURLDirect` URL
+Scenario: WilliamS_Verify_TotalPriceOfProductr
+Given [8012-399] Navigate to `williamSURLDirect` page
 When [8012-993] User scroll 700 to laod items
 And [8012-992] sleep time 3000
 And [1200-1302] For any element from williamS PLP 
@@ -25,7 +24,7 @@ Examples:
 |williamsS First Price|
 |williamsS Second Price|
 
-Scenario: Gap_Verify_TotalPriceOfProductr:Total price
+Scenario: WilliamS_Verify_TotalPriceOfProductr:Total price
 Given [8012-992] sleep time 3000
 Then [1000-9110] User navigate to `williamsCartSection` URL
 And [1101-1184] the user saves williamS Cart Total Price text in scenario scope under name gap Total Price

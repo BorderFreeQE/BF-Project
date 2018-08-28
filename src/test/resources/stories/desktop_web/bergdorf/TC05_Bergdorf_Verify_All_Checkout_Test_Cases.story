@@ -27,7 +27,7 @@ And [1100-1340] User fills bergdorfCheckoutAddress with `checkoutEmailAddress`
 And [1100-1340] User fills bergdorfCheckoutCity with `checkoutCity`
 And [1100-1340] User fills bergdorfCheckoutPhone with `checkoutPhoneNumber`
 And [1100-1300] User clicks on the bergdorfCheckoutContinue
-And [1100-1321] User scroll to the bergdorfCheckoutPlaceOrder then click it
+And [1000-9400] Execute $('#submit-order-btn-right').click() javascript
 And [8012-0006] sleep after last action for 5000 Milliseconds
 And [1000-6010] Focus on Frame cc-frame
 And [1101-1102] bergdorfCheckoutCardNumberError text is equal to Card number is required case sensitive
@@ -37,7 +37,7 @@ And [1100-1340] User fills bergdorfCheckoutCardNumber with `paymentCardNumber`
 And [1100-1340] User fills bergdorfCheckoutExpirationDate with `paymentExpirationDate`
 And [1100-1340] User fills bergdorfCheckoutSecurityCode with `paymentSecurityCode`
 And [1000-6020] Focus on parent Frame
-And [1100-1300] User clicks on the bergdorfCheckoutPlaceOrder
+And [1000-9400] Execute $('#submit-order-btn-right').click() javascript
 Then [1111-1080] bergdorfCheckoutSubmitError should be displayed, Within 120 seconds
 And [1000-9140] Close the browser
 

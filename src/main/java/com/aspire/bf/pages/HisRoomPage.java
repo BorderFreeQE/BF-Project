@@ -169,10 +169,8 @@ public interface HisRoomPage {
 	@IDSelector("${pages.hisroom.hisroomCheckoutSubmitError}")
 	public AspireWebElement hisroomCheckoutSubmitError();
 	
-	
-	
-	
-	
+	@CssSelector("${hisroomSizeChartClose}")
+	public AspireWebElement hisroomSizeChartClose();
 	
 	
 	

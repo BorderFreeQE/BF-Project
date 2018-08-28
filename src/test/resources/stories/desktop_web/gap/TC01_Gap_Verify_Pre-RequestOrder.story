@@ -11,7 +11,6 @@ And [1200-1302] For any element from gap Category Product
 And [1100-0581] the user saves its attribute of href in global scope under name gap category URL
 Then [1000-9110] User navigate to `gap category URL` URL
 When [8012-993] User scroll 700 to laod items
-!-- And [1211-1090] gap Product Card Img should be all disabled, Within 120 seconds
 And [1200-1302] For any element from gap Product Card
 And [1101-1181] the user saves gap Product Card Price text in global scope under name gap Product Price
 And [1101-1181] the user saves gap Product Card Name text in global scope under name gap Product Name

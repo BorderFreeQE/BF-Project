@@ -4,6 +4,7 @@ import java.util.Random;
 
 import javax.inject.Named;
 
+import org.eclipse.jetty.util.annotation.Name;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
@@ -52,7 +53,9 @@ public class CommonSteps {
 	public void execute(String elementName) {
 
 	}
-
+	
+	
+	@Then("[8012-9783] verfiy that text $textA and text $textB are equals")
 	@When("[8012-9783] verfiy that text $textA and text $textB are equals")
 	public void textText(String textA, String textB) {
 		if (textA.toLowerCase().trim().equals(textB.toLowerCase().trim())) {
@@ -73,7 +76,7 @@ public class CommonSteps {
 		}
 
 	}
-
+	@Given("[8012-9784] user take a look the page contents color $colorCotent by index $colorIndex, size $sizeContent by index $sizeIndex, or both")
 	@When("[8012-9784] user take a look the page contents color $colorCotent by index $colorIndex, size $sizeContent by index $sizeIndex, or both")
 	public void productPageContent(@Named("colorCotent")String colorElement
 			,@Named("colorIndex")int colorIndex,@Named("sizeIndex")int sizeIndex, 
@@ -160,6 +163,52 @@ public class CommonSteps {
 	}
 
 
+	@Then("[8012-329] User select $itemName and click any one of $elementName")
+	@When("[8012-329] User select $itemName and click any one of $elementName")
+	public  void selectContent(@Named("itemName")String itemName,@Named("elementName")String elementName) {
+	
+		switch (itemName.trim()) {
+		case "SizeRange":
+			if(checkElements(elementName)!=false) {
+			randomclick(elementName);  }
+
+			break;
+
+		case "Size":
+			if(checkElements(elementName)!=false) {
+			randomclick(elementName);  }
+			
+			break;
+
+		default:
+			break;
+		}
+
+	}
+	
+	boolean checkElements(String elementsVisible) {
+		try {
+			AspireWebElements elementCheck = AspireBrowser.getElementsByPropertyNameGlobaly(elementsVisible);
+
+			elementCheck.within(20).toBePresence().allIsDisabled();
+			System.out.println("I got it the");			
+			
+			return true;
+		} catch (Exception e) {
+			System.out.println("it did't finde any of that contents ");
+
+			return false;
+		}
+
+	}
+
+	public void randomclick(String element)
+	{
+		Random rand = new Random();
+		int  random = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly(element).size());
+		AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).click();
+	}
+	
 
 
 }

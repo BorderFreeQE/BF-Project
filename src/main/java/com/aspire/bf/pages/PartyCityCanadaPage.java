@@ -192,6 +192,8 @@ public interface PartyCityCanadaPage {
 	
 	
 	
+	@CssSelector("${partycityCategoryButton}")
+	public AspireWebElement partycityCategoryButton();
 	
 	
 	

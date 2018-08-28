@@ -35,5 +35,3 @@ And [1100-1340] User fills partycityPaymentSecurityCode with `paymentSecurityCod
 And [1000-6020] Focus on parent Frame
 And [1100-1400] Execute `click` javascript on partycityPalceOrderButton
 Then [1111-1080] partycitySubmitError should be displayed, Within 120 seconds
-And [1000-9140] Close the browser
-

@@ -13,6 +13,8 @@ And [1100-0400] Execute `click` javascript on the element
 And [1111-1080] hisroomPdp should be displayed, Within 120 seconds
 And [1100-1600] Select hisroomSize By Index 1
 And [1000-9400] Execute $('#highslide-html img').click() javascript
+And [1111-1080] hisroom Size Chart Close should be displayed, Within 120 seconds
+And [1100-0300] User click on it
 And [1200-1302] For any element from hisroomColor
 And [1100-0300] User click on it
 And [1100-1400] Execute `click` javascript on hisroomAddToShoppingBag

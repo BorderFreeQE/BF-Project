@@ -176,7 +176,8 @@ public interface BergdorfPage {
 	public AspireWebElement bergdorfColor();
 	
 	
-	
+	@CssSelector("${bergdorfCartDialog}")
+	public AspireWebElement bergdorfCartDialog();
 	
 	
 	/////#########_______ Mobile Element Selectors _______##########////////
@@ -201,6 +202,10 @@ public interface BergdorfPage {
 	
 	@CssSelector("${mobileBergdorfBagTotalPrice}")
 	public AspireWebElement mobileBergdorfBagTotalPrice();	
+	
+	
+	@CssSelector("${mobileBergdorfCheckoutPlaceOrder}")
+	public AspireWebElement mobileBergdorfCheckoutPlaceOrder();	
 	
 	
 }

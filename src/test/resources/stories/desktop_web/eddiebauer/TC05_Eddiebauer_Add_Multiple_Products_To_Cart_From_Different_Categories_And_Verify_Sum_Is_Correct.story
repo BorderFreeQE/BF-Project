@@ -12,7 +12,7 @@ And [1200-1302] For any element from eddiebauerSales
 And [1100-0400] Execute `click` javascript on the element
 And [1211-1000] eddiebauerProducts should be all clickable, Within 120 seconds
 And [1200-0302] For any of the elements
-And [1100-0300] User click on it
+And [1100-0400] Execute `click` javascript on the element
 And [1111-1080] eddiebauerPdp should be displayed, Within 120 seconds
 And [8017-0003] user randomly select an available eddiebauerSize
 And [8017-0003] user randomly select an available eddiebauerColor
