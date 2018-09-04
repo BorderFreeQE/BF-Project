@@ -4,12 +4,10 @@ Meta:
 Scenario:  TC02_Ebags_Verify_PDP_ProductName_And_Price
 
 Given [1000-9000] User opens ebags page
-When [1200-1302] For any element from ebags Product Gategory
-And [1100-0581] the user saves its attribute of href in global scope under name ebags category URL
-And [8012-399] Navigate to `ebags category URL` page
-And [8012-993] User scroll 700 to laod items
+And [8012-884] execute click script
+When [8012-399] Navigate to `eBags Direct URL` page
 And [1211-1080] ebagsProducts should be all displayed, Within 120 seconds
-And [1200-1302] For any element from ebagsProducts
+And [1200-0302] For any of the elements
 And [1100-1581] the user saves ebagsPlpImage attribute of src in global scope under name ebagsPlpImage
 And [1101-1181] the user saves ebagsProductPrice text in global scope under name ebagsProductPrice
 And [1101-1181] the user saves ebagsProductName text in global scope under name ebagsProductName

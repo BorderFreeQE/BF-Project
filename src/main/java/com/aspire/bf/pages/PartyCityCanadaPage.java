@@ -85,8 +85,8 @@ public interface PartyCityCanadaPage {
 	@CssSelector("${pages.partycity.partycityCartPage}")
 	public AspireWebElement partycityCartPage();
 	
-	@CssSelector("${pages.partycity.partycityCartPriceB}")
-	public AspireWebElement partycityCartPriceB();
+	@CssSelector("${pages.partycity.partycityCartTotalPrice}")
+	public AspireWebElement partycityCartTotalPrice();
 	
 	@CssSelector("${pages.partycity.partycityCartUpdate}")
 	public AspireWebElement partycityCartUpdate();
@@ -196,6 +196,8 @@ public interface PartyCityCanadaPage {
 	public AspireWebElement partycityCategoryButton();
 	
 	
+	@CssSelector("${partycityGoToCart}")
+	public AspireWebElement partycityGoToCart();
 	
 	
 	

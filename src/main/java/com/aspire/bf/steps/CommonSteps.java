@@ -8,13 +8,17 @@ import org.eclipse.jetty.util.annotation.Name;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
+import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.WebElement;
 import org.springframework.stereotype.Component;
 
 import com.aspire.automation.annotation.Steps;
 import com.aspire.automation.web.util.AspireBrowser;
+import com.aspire.automation.web.util.AspireMobileBrowser;
 import com.aspire.automation.web.util.AspireWebElement;
 import com.aspire.automation.web.util.AspireWebElements;
+import com.aspire.automation.web.util.annotation.XPathSelector;
+import com.thoughtworks.selenium.webdriven.commands.GetAlert;
 
 @Steps
 @Component
@@ -47,11 +51,17 @@ public class CommonSteps {
 		System.out.println("#########________" + getNumber + "_________#########");
 	}
 
-	@Given("[8012-884] execute click script $elementName")
+	@Given("[8012-884] execute click script")
 	@Then("[8012-884] execute click script $elementName")
 	@When("[8012-884] execute click script $elementName")
-	public void execute(String elementName) {
-
+	public void execute() {
+		
+		verifyTime(17000);
+		try {
+			AspireBrowser.getLastAccessedPage().back().alert().accept();
+		} catch (Exception e) {
+			navigateUrl("https://www.ebags.com/");
+		}
 	}
 	
 	
@@ -135,7 +145,7 @@ public class CommonSteps {
 		AspireWebElement massage = AspireBrowser.getElementByPropertyNameGlobaly(element);
 		
 		try {
-			massage.within(20).toBePresence().isDisplayed();
+			massage.within(10).toBePresence().isDisplayed();
 			massage.click();
 		} catch (Exception e) {
 
@@ -167,9 +177,11 @@ public class CommonSteps {
 	@When("[8012-329] User select $itemName and click any one of $elementName")
 	public  void selectContent(@Named("itemName")String itemName,@Named("elementName")String elementName) {
 	
+
 		switch (itemName.trim()) {
 		case "SizeRange":
-			if(checkElements(elementName)!=false) {
+			int itemsSize = AspireBrowser.getElementsByPropertyNameGlobaly(elementName).size();
+			if(checkElements(elementName)!=false&&itemsSize>0) {
 			randomclick(elementName);  }
 
 			break;
@@ -178,6 +190,19 @@ public class CommonSteps {
 			if(checkElements(elementName)!=false) {
 			randomclick(elementName);  }
 			
+			break;
+
+		case "size from dropdown list":
+
+			try {
+				AspireWebElement size = AspireBrowser.getElementByPropertyNameGlobaly(elementName);
+				if (size.isDisplayed() == true) {
+					size.click();
+					randomclick("eBagsPdpSizeDropdown");
+
+				} 
+			} catch (Exception e) {
+			}
 			break;
 
 		default:

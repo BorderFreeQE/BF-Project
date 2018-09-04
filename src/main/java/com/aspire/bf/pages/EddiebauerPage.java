@@ -179,9 +179,6 @@ public interface EddiebauerPage {
 	@CssSelector("${pages.eddiebauer.eddiebauerSubmitOrder}")
 	public AspireWebElement eddiebauerSubmitOrder();
 	
-	
-	
-	
 	/////////////____ Mobile Element____///////
 	
 	@CssSelector("${mobileEdditbureHumbuger}")

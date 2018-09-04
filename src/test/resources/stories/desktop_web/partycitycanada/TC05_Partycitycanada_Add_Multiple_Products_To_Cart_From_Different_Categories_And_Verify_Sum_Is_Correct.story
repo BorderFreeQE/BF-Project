@@ -12,12 +12,13 @@ And [1200-1302] For any element from partycityCategory
 And [1100-0400] Execute `click` javascript on the element
 And [8019-0002] user search for partycityPlp
 And [1200-1302] For any element from partycityProducts
+And [1101-1181] the user saves partycityProductName text in global scope under name partycityProductName
 And [1100-0300] User click on it
 And [1111-1080] partycityPdp should be displayed, Within 120 seconds
 And [8019-0004] user randomly select an available partycityColors
 And [1100-1400] Execute `click` javascript on partycityAddToBasket
 And [1111-1080] partycityCartDialog should be displayed, Within 120 seconds
-And [1100-1371] User moves mouse to partycityCart and click on partycityViewBasket
+When [1100-1371] User moves mouse to partycityCart and click on partycityGoToCart
 And [1111-1080] partycityCartPage should be displayed, Within 120 seconds
 And [1101-1181] the user saves partycityCartPriceOne text in global scope under name partycityCartPriceOne
 And [1101-1181] the user saves partycityCartPriceTwo text in global scope under name partycityCartPriceTwo

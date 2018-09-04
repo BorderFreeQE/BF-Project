@@ -7,10 +7,10 @@ Scenario:  Gap_Verify_Pre-CheckOuttOrder
 Given [1000-9000] User opens gap page
 When [1200-1302] For any element from gap Category Product
 And [1100-0581] the user saves its attribute of href in global scope under name gap category URL
-Then [1000-9110] User navigate to `gap category URL` URL
-When [8012-993] User scroll 1000 to laod items
+And [8012-399] Navigate to `gap category URL` page
+And [8012-993] User scroll 1000 to laod items
 And [1200-1302] For any element from gap Product Card
-And [1100-0300] User click on it
+And [1100-0370] User move mouse to it and click it
 And [8012-993] User scroll 200 to laod items
 And [1111-1080] gap PDP Img should be displayed, Within 120 seconds
 And [1101-1181] the user saves gap PDP Card Name text in global scope under name gap PDP Name

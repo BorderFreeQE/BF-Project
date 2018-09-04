@@ -11,9 +11,9 @@ And [1200-1302] For any element from lastcallProducts
 And [1100-0300] User click on it
 And [1111-1080] lastcallPdp should be displayed, Within 120 seconds
 And [8014-0001] user search for lastcallValidPdp
-And [8014-0003] user randomly select an available lastcallSize
+When [1100-1600] Select lastcallSize By Index 1
 And [8014-0003] user randomly select an available lastcallColor
 And [1100-1300] User clicks on the lastcallAddToBag
 And [1111-1080] lastcallBagDialog should be displayed, Within 120 seconds
-And [1100-1300] User clicks on the lastcallBagCheckout
+And [1100-1300] User clicks on the mobile Lastcall Bag Checkout
 Then [1111-1080] lastcallBagPage should be displayed, Within 120 seconds

@@ -13,6 +13,7 @@ And [1101-1181] the user saves neimanmarcusDuties text in global scope under nam
 And [1101-1181] the user saves neimanmarcusTax text in global scope under name neimanmarcusTax
 And [1101-1181] the user saves neimanmarcusOrderTotal text in global scope under name neimanmarcusOrderTotal
 And [8015-0007] `neimanmarcusOrderTotal` price should be matched with the summation of `neimanmarcusItemsTotal` , `neimanmarcusShipping` , `neimanmarcusDuties` and `neimanmarcusTax`
+And [8012-993] User scroll 500 to laod items
 And [1100-1321] User scroll to the neimanmarcusCheckoutContinue then click it
 And [8015-0003] sleep after last action for 10000 Milliseconds
 And [1100-1300] User clicks on the neimanmarcus Continue CheckOut

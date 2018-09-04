@@ -92,6 +92,8 @@ public interface LastCallPage {
 	@CssSelector("${pages.lastcall.lastcallBagIcon}")
 	public AspireWebElement lastcallBagIcon();
 	
+
+
 	@CssSelector("${pages.lastcall.lastcallBagCheckout}")
 	public AspireWebElement lastcallBagCheckout();
 	
@@ -202,7 +204,10 @@ public interface LastCallPage {
 	
 	
 	
+	//_____ Mobile Elements'
 	
+	@CssSelector("${mobileLastcallBagCheckout}")
+	public AspireWebElement mobileLastcallBagCheckout();
 	
 	
 	

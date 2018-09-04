@@ -28,6 +28,10 @@ public interface GapPage {
 	@CssSelector("${gapCategoryProduct}")
 	public AspireWebElements gapCategoryProduct();
 	
+	@CssSelector("${gapPromoDrower}")
+	public AspireWebElement gapPromoDrower();
+	
+	
 	//Gap product Elements  
 	@CssSelector("${gapProductCardImg}")
 	public AspireWebElements gapProductCardImg();

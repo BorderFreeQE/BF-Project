@@ -4,6 +4,7 @@ import com.aspire.automation.web.util.AspireWebElement;
 import com.aspire.automation.web.util.AspireWebElements;
 import com.aspire.automation.web.util.annotation.CssSelector;
 import com.aspire.automation.web.util.annotation.Page;
+import com.aspire.automation.web.util.annotation.XPathSelector;
 
 
 @Page(name = "landsend", url = "${landsendurl}")
@@ -41,6 +42,12 @@ public interface LandsendPage {
 	@CssSelector("${landsendSaveContinue}")
 	public AspireWebElement landsendSaveContinue();
 	
+	
+	@XPathSelector("${landsendSignUp}")
+	public AspireWebElement landsendSignUp();
+
+	@XPathSelector("${landsendSignUpDialog}")
+	public AspireWebElement landsendSignUpDialog();
 	
 	//PDP
 	
@@ -113,7 +120,8 @@ public interface LandsendPage {
 	
 	@CssSelector("${landsendCheckOutModule}")
 	public AspireWebElement landsendCheckOutModule();
-	@CssSelector("${landsend FirstNameError}")
+	
+	@CssSelector("${landsendFirstNameError}")
 	public AspireWebElement landsendFirstNameError();
 	
 	@CssSelector("${landsendLastNameError}")
@@ -178,26 +186,31 @@ public interface LandsendPage {
 	public AspireWebElement landsendModalContent();
 	
 	
+	@CssSelector("${lansendBeforeContinue}")
+	public AspireWebElement lansendBeforeContinue();
 	
 
+	@CssSelector("${landsendConfirmEmail}")
+	public AspireWebElement landsendConfirmEmail();
 	
 	
 	
+	//________ Mobile Elements
+	
+	
+	@CssSelector("${mobileLandsendPDPName}")
+	public AspireWebElement mobileLandsendPDPName();
 	
 	
 	
+	@CssSelector("${mobileLandsendPDPPrice}")
+	public AspireWebElement mobileLandsendPDPPrice();
 	
+	@CssSelector("${mobileLandsendBagDialog}")
+	public AspireWebElement mobileLandsendBagDialog();	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@CssSelector("${mobileLandsendEdit}")
+	public AspireWebElement mobileLandsendEdit();	
 	
 	
 	

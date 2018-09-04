@@ -4,7 +4,8 @@ Meta:
 Scenario:  TC03_Ebags_Verify_Cart_PorductName_And_Price
 
 Given [1101-1080] ebagsPdpProductPage should be displayed
-And [8012-992] sleep time 3000
+When [8012-992] sleep time 3000
+And [8012-329] User select size from dropdown list and click any one of eBagsPdpSize
 When [8006-0009] user randomly select an available ebagsColor
 And [1101-1181] the user saves ebagsPdpPrice text in global scope under name ebagsPdpPrice
 And [1101-1181] the user saves ebagsPdpName text in global scope under name ebagsPdpName

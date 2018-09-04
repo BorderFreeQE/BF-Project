@@ -5,6 +5,7 @@ import com.aspire.automation.web.util.AspireWebElements;
 import com.aspire.automation.web.util.annotation.CssSelector;
 import com.aspire.automation.web.util.annotation.IDSelector;
 import com.aspire.automation.web.util.annotation.Page;
+import com.aspire.automation.web.util.annotation.XPathSelector;
 
 @Page(name = "ebags", url = "${pages.ebags.ebagsurl}")
 public interface EbagsPage {
@@ -197,18 +198,14 @@ public interface EbagsPage {
 	@CssSelector("${pages.ebags.ebagsGuestCheckout}")
 	public AspireWebElement ebagsGuestCheckout();
 	
+	@XPathSelector("${eBagesAcceptAlert}")
+	public AspireWebElement eBagesAcceptAlert();	
 	
+	@CssSelector("${eBagsPdpSize}")
+	public AspireWebElement eBagsPdapSize();
 	
+	@CssSelector("${eBagsPdpSizeDropdown}")
+	public AspireWebElements eBagsPdpSizeDropdown();
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	                        
 }
