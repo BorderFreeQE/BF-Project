@@ -2,7 +2,7 @@ aspire:
   webdriver:
     scope: restrat     
     chrome:
-      enabled: true
+      enabled: false
       name: chrome
       mobile: false
       remote:
@@ -35,7 +35,7 @@ aspire:
       - --disable-extensions
        
     firefox:
-      enabled: false
+      enabled: true
       name: firefox
       mobile: false
       remote:
@@ -129,8 +129,8 @@ aspire:
       - --disable-extensions     
     ie: 
       enabled: false
-      name: ie32
-      processor: processor-32
+      name: ie64
+      processor: processor-64
       mobile: false
       remote:
         enabled: false
@@ -145,7 +145,7 @@ aspire:
  
       capabilities:
         browser : ie
-        browser_version : 41.16
+        browser_version : 11.66
         os : windows
         os_version: windows 10
         project : WEB ASPIRE TEMPLATE TEST

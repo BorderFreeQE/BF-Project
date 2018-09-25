@@ -11,41 +11,44 @@ aspire:
       defaultloader:
         enabled: true   
         include:
+          - stories/desktop_web/nordstrom/**.story   
+#          - stories/chico's/**.story
 #          - stories/desktop_web/**/**.story
+          
 #          - stories/mobile_web/**/**.story
 ###          - stories/mobile_web/harrods/**.story
 ###          - stories/mobile_web/barneys/**.story
-
-
-          - stories/mobile_web/landsend/**.story
-          - stories/mobile_web/lanedbryant/**.story          
-          - stories/mobile_web/neimanmarcus/**.story
-          - stories/mobile_web/bcbg/**.story
-          - stories/mobile_web/eddiebauer/**.story
-          - stories/mobile_web/lordandtaylor/**.story 
-          - stories/mobile_web/saksoff/**.story 
-          - stories/mobile_web/nordstrom/**.story
-          - stories/mobile_web/pacsun/**.story
-          - stories/mobile_web/bergdorf/**.story
-          - stories/mobile_web/saks/**.story
-          - stories/mobile_web/ruelala/**.story
-          - stories/mobile_web/llbean/**.story
-          - stories/mobile_web/partycitycanada/**.story
-          - stories/mobile_web/ebags/**.story
-          - stories/mobile_web/lastcall/**.story
-          - stories/mobile_web/gap/**.story
-          - stories/mobile_web/underarmour/**.story
+#
+#          - stories/mobile_web/hanes/**.story
+##          - stories/mobile_web/lastcall/**.story
+#          - stories/mobile_web/lanedbryant/**.story          
+##          - stories/mobile_web/neimanmarcus/**.story
+#          - stories/mobile_web/bcbg/**.story
+#          - stories/mobile_web/eddiebauer/**.story
+##          - stories/mobile_web/ebags/**.story      
+#          - stories/mobile_web/lordandtaylor/**.story 
+##          - stories/mobile_web/saksoff/**.story 
+#          - stories/mobile_web/nordstrom/**.story
+##          - stories/mobile_web/pacsun/**.story
+#          - stories/mobile_web/bergdorf/**.story
+#          - stories/mobile_web/saks/**.story
+#          - stories/mobile_web/ruelala/**.story
+#          - stories/mobile_web/llbean/**.story
+##          - stories/mobile_web/partycitycanada/**.story
+#          - stories/mobile_web/landsend/**.story
+##          - stories/mobile_web/lastcall/**.story
+#          - stories/mobile_web/underarmour/**.story
           
 
 
   webdriver:
     scope: restart
     strategy: MIXED
-    default-driver-name: android
+    default-driver-name: firefox 
     android:
       name: android
-      enabled: true
-      run-on: physical-device
+      enabled: false
+      run-on: virtual-device
       remote:
        enabled: false
        user: jnassar
@@ -66,8 +69,9 @@ aspire:
         timeoutInSeconds: 6000
         maxDuration: 1800
         newCommandTimeout: 60000
-        timeout-in-seconds: 1800
-        
+        timeout-in-seconds: 1800  
+      arguments:
+      - --disable-notifications
         
   mobile:
     appium:

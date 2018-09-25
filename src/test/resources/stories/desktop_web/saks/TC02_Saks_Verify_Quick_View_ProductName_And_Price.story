@@ -23,3 +23,4 @@ Then [1101-1140] saksQuickViewProductName text should contain `saksProductName`
 And [1101-1181] the user saves saksQuickViewProductPrice text in global scope under name saksQuickViewPrice
 And [8002-0002] User compare between `saksProductPrice` and `saksQuickViewPrice`
 And [1100-1581] the user saves saksQuickViewImage attribute of data-default-image-set in global scope under name saksQuickViewImage
+And [8012-999] User wait Unexpected massage saksFeedbackDialog until appear within 3

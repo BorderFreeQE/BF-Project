@@ -10,7 +10,7 @@ import com.aspire.automation.web.util.annotation.Page;
 public interface SephoraPage {
 
 	@CssSelector("${pages.sephora.sephoraTopNav}")
-	public AspireWebElement sephoraTopNav();
+	public AspireWebElements sephoraTopNav();
 	
 	@CssSelector("${pages.sephora.sephoraProducts}")
 	public AspireWebElements sephoraProducts();
@@ -207,6 +207,8 @@ public interface SephoraPage {
 	@CssSelector("${pages.sephora.sephoraRemoveSecondItem}")
 	public AspireWebElement sephoraRemoveSecondItem();
 	
+	@CssSelector("${sephoraSignInDialogClose}")
+	public AspireWebElement sephoraSignInDialogClose();
 	
 	
 	

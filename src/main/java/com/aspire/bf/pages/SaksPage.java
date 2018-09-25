@@ -242,4 +242,13 @@ public interface SaksPage {
 	@CssSelector("${pages.saks.saksProductImage}")
 	public AspireWebElement saksProductImage();
 	
+	@CssSelector("${saksFeedbackDialog}")
+	public AspireWebElement saksFeedbackDialog();
+	
+	@CssSelector("${saksEditItem}")
+	public AspireWebElement saksEditItem();
+	
+	@CssSelector("${saksApllyButton}")
+	public AspireWebElement saksApllyButton();
+		
 }

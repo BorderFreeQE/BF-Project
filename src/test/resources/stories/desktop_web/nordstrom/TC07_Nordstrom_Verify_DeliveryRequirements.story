@@ -4,9 +4,12 @@ Meta:
 
 Scenario:  Nordstrom_Verify_DeliveryRequirements(invalied values)
 
-Given [8012-992] sleep time 1000
-When [1111-1080] nordstrom Go To Checkout should be displayed, Within 120 seconds
+Given [1000-9001] User on nordstrom page
+When [8012-300]User check unexpected nordstromAcsMainInvite message present on site nordstrom within 3
+And [1111-1080] nordstrom Go To Checkout should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the nordstrom Go To Checkout
+And [8012-992] sleep time 10000
+And [8012-300]User check unexpected nordstromRestrictedMessage message present on site nordstrom within 3
 And [8012-992] sleep time 10000
 And [1000-6010] Focus on Frame envoyId
 And [1100-1320] User scroll to the nordstrom Cuntinue Order

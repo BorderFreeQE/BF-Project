@@ -7,7 +7,6 @@ import com.aspire.automation.web.util.annotation.Page;
 
 @Page(name = "nordstrom", url = "${nordstromUrl}")
 
-
 public interface NordstromPage {
 
 	//______Nordstrom First Lunch
@@ -26,6 +25,11 @@ public interface NordstromPage {
 	@CssSelector("${nordstromProductsBag}")
 	public AspireWebElement nordstromProductsBag();
 	
+	@CssSelector("${nordstromRestrictedMessage}")
+	public AspireWebElement nordstromRestrictedMessage();
+	
+	@CssSelector("${nordstromAcsMainInvite}")
+	public AspireWebElement nordstromAcsMainInvite();
 	
 	//______Nordstrom PCP
 	@CssSelector("${nordstromProductsCard}")
@@ -56,6 +60,25 @@ public interface NordstromPage {
 	
 	@CssSelector("${nordstromAddToBag}")
 	public AspireWebElement nordstromAddToBag();
+	
+	
+	@CssSelector("${nordstromViewShoppingBag}")
+	public AspireWebElement nordstromViewShoppingBag();
+	
+	@CssSelector("${nordstromBagPage}")
+	public AspireWebElement nordstromBagPage();
+	
+	@CssSelector("${nordstromBagButton}")
+	public AspireWebElement nordstromBagButton();
+	
+	@CssSelector("${nordstromColorOfLable}")
+	public AspireWebElement nordstromColorOfLable();
+	
+	@CssSelector("${nordstromColorOfProduct}")
+	public AspireWebElements nordstromColorOfProduct();
+	
+	@CssSelector("${nordstromPopOverContent}")
+	public AspireWebElement nordstromPopOverContent();
 	
 	
 	//_____Nordstrom Dialog

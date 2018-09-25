@@ -17,8 +17,8 @@ public interface WilliamsSonomaPage {
 	@CssSelector("${williamSCountryDialog}")
 	public AspireWebElement williamSCountryDialog();
 	
-	@CssSelector("${williamSTurkyFlag}")
-	public AspireWebElement williamSTurkyFlag();
+	@CssSelector("${williamSNewZealandFlag}")
+	public AspireWebElement williamSNewZealandFlag();
 	
 	@CssSelector("${williamSUpdateCountry}")
 	public AspireWebElement williamSUpdateCountry();

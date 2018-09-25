@@ -3,12 +3,14 @@ Meta:
 
 Scenario:  TC01_Sephora_Verify_Quick_View_ProductName_And_Price
 
-Given [1000-9130] Clear cache and cookies
-When [1000-3000] User maximize browser window
-And [1000-9000] User opens sephora page
-And [1100-1400] Execute `click` javascript on sephoraTopNav
-And [1200-1302] For any element from sephoraSales
-And [1100-0400] Execute `click` javascript on the element
+Given [1000-9000] User opens sephora page
+When [1100-1300] User clicks on the sephora SignIn Dialog Close
+When [1211-1000] sephoraTopNav should be all clickable, Within 120 seconds
+And [1200-0302] For any of the elements
+And [1100-0300] User click on it
+When [1211-1000] sephoraSales should be all clickable, Within 120 seconds
+And [1200-0302] For any of the elements
+And [1100-0300] User click on it
 And [1211-1080] sephoraProducts should be all displayed, Within 120 seconds
 And [1200-0302] For any of the elements
 And [1101-1181] the user saves sephoraProductName text in global scope under name sephoraProductName

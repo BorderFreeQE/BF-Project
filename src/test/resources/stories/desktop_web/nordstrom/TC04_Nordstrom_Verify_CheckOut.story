@@ -3,10 +3,9 @@ Meta:
 @ReportName nordstrom
 
 Scenario:  Nordstrom_Verify_CheckOut
-Given [8012-992] sleep time 3000
-When [1100-1300] User clicks on the nordstrom Add To Bag
-And [1100-1300] User clicks on the nordstrom Product Dialog close
-And [8012-399] Navigate to bagSection page
+Given [1000-9001] User on nordstrom page
+When [8012-300]User check unexpected nordstromAcsMainInvite message present on site nordstrom within 3
+And [1100-1300] User clicks on the nordstrom View Shopping Bag
 And [1101-1181] the user saves nordstrom Bag Item Name text in global scope under name nordstrom Item Name
 And [1101-1181] the user saves nordstrom Bag Item Price text in global scope under name nordstrom Item Price
 Then [5101-1106] verify that text `nordstrom Item Name` has index of `nordstrom PDP Name`
