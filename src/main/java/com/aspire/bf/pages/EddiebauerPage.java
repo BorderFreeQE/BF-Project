@@ -107,6 +107,9 @@ public interface EddiebauerPage {
 	@CssSelector("${pages.eddiebauer.eddiebauerLastNameError}")
 	public AspireWebElement eddiebauerLastNameError();
 	
+	@CssSelector("${pages.eddiebauer.edditebaureRemove}")
+	public AspireWebElement edditebaureRemove();
+	
 	@CssSelector("${pages.eddiebauer.eddiebauerAddressError}")
 	public AspireWebElement eddiebauerAddressError();
 	
@@ -118,6 +121,9 @@ public interface EddiebauerPage {
 	
 	@CssSelector("${pages.eddiebauer.eddiebauerStateError}")
 	public AspireWebElement eddiebauerStateError();
+	
+	@CssSelector("${pages.eddiebauer.edditebaureRemoveCom}")
+	public AspireWebElement edditebaureRemoveCom();
 	
 	@CssSelector("${pages.eddiebauer.eddiebauerCountryError}")
 	public AspireWebElement eddiebauerCountryError();

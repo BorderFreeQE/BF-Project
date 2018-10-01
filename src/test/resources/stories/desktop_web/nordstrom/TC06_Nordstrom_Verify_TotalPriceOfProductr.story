@@ -1,6 +1,7 @@
 Meta:
 
 @ReportName nordstrom
+@both
 
 Scenario: Nordstrom_Verify_TotalPriceOfProductr
 Given [1000-9000] User opens nordstrom page
@@ -32,9 +33,7 @@ Examples:
 
 Scenario: Gap_Verify_TotalPriceOfProductr:Total price
 Given [1000-9001] User on nordstrom page
-When [1101-1090] nordstrom Product Dialog should be disabled
-And [1100-1300] User clicks on the nordstrom View Shopping Bag
-And [1101-1090] nordstrom Bag Page should be disabled
+When [1100-1300] User clicks on the nordstrom View Shopping Bag
 And [1100-1320] User scroll to the nordstrom BagItem Total Price
 And [1101-1181] the user saves nordstrom BagItem Total Price text in global scope under name nordstrom Bag Item Total Price
 Then [8028-0007] the user check the sum of `nordstrom Cart Product Price` and `gap Second Price` with `nordstrom Bag Item Total Price`

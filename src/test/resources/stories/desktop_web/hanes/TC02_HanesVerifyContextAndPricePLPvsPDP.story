@@ -20,4 +20,3 @@ And [1101-1181] the user saves hanes PDP Name text in global scope under name ha
 And [1101-1181] the user saves hanes PDP Price text in global scope under name hanes PDP Product Price
 Then [8028-0003] User compare between `hanes PDP Price` and `hanes PDP Product Price`
 And [8028-0003] User compare between `hanes PDP Name` and `hanes PDP Product Name`
-

@@ -5,8 +5,7 @@ Scenario:  TC03_Hisroom_Verify_Cart_PorductName_And_Price
 
 Given [1101-1080] hisroomPdp should be displayed
 When [1100-1600] Select hisroomSize By Index 1
-And [1000-9400] Execute $('#highslide-html img').click() javascript
-And [1100-1400] Execute `click` javascript on hisroomSizeCloseDialog
+And [8012-300]User check unexpected hisroomSizeCloseDialog message present on site hisRoom within 3
 And [1111-1080] hisroom Size Chart Close should be displayed, Within 120 seconds
 And [1100-0300] User click on it
 And [1200-1302] For any element from hisroomColor

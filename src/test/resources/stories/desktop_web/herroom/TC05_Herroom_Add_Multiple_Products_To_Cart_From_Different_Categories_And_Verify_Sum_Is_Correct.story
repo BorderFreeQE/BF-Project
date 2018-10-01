@@ -11,9 +11,10 @@ And [1200-0302] For any of the elements
 And [1101-1181] the user saves herroomProductName text in global scope under name herroomProductName
 And [1100-0400] Execute `click` javascript on the element
 And [1111-1080] herroomPdp should be displayed, Within 120 seconds
-And [8033-0002] user randomly select an available herroomSize
-And [1100-1400] Execute `click` javascript on herroomSizeCloseDialog
-And [8033-0002] user randomly select an available herroomColor
+When [1100-1600] Select herroomSize By Index 1
+And [8012-300]User check unexpected herroomSizeCloseDialog message present on site hisRoom within 15
+And [1200-1302] For any element from herroomColor
+And [1100-0300] User click on it
 And [1100-1400] Execute `click` javascript on herroomAddToShoppingBag
 And [8033-0003] sleep after last action for 2000 Milliseconds
 And [1100-1400] Execute `click` javascript on herroomCartCheckout

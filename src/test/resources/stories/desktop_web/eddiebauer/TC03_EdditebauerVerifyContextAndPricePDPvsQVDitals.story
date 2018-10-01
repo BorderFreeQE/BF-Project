@@ -1,7 +1,7 @@
 Meta:
 @ReportName Eddie Bauer
 
-Scenario: TC03_Eddiebauer_Verify_Cart_PorductName_And_Price
+Scenario: check price localization and context chooser
 
 Given [1101-1080] eddiebauerPdp should be displayed
 When [8017-0003] user randomly select an available eddiebauerSize

@@ -1,5 +1,6 @@
 Meta:
 @ReportName nordstrom
+@both
 
 Scenario:  Nordstrom_Verify_Welcome_Mat_Appear
 
@@ -11,3 +12,6 @@ And [8012-992] sleep time 3000
 And [1000-9300] User refresh the page
 And [8012-300]User check unexpected nordstromAcsMainInvite message present on site nordstrom within 3
 Then [1201-1080] nordstrom Category Product should be all displayed
+
+
+

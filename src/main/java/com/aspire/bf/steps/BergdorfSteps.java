@@ -75,7 +75,7 @@ public class BergdorfSteps {
 		
 		try
 		{
-			if (element.equals("bergdorfValidPdp"))
+			if (element.equals("bergdorf Valid Pdp"))
 			{
 				if (AspireBrowser.getElementByPropertyNameGlobaly(element).isDisplayed())
 			    {
@@ -152,7 +152,7 @@ public class BergdorfSteps {
 				
 	}
 	
-	
+	@Then("[8012-0007] $orderTotal price should be matched with the summation of $itemTotal , $shipping and $dutiesAndTaxes")	
 	@When("[8012-0007] $orderTotal price should be matched with the summation of $itemTotal , $shipping and $dutiesAndTaxes")
 	public boolean checkoutsummation(String orderTotal, String itemTotal, String shipping, String dutiesAndTaxes)
 	{

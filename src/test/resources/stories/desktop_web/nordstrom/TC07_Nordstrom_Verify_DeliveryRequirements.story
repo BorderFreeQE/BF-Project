@@ -1,6 +1,7 @@
 Meta:
 
 @ReportName nordstrom
+@both
 
 Scenario:  Nordstrom_Verify_DeliveryRequirements(invalied values)
 

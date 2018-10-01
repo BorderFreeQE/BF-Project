@@ -17,6 +17,8 @@ import com.aspire.bf.pages.HisRoomPage;
 @Steps
 @Component
 
+
+
 public class HisRoomSteps {
 
 	@Browser("hisroom")

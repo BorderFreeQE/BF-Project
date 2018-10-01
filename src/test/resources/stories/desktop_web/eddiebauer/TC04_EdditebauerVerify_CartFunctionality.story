@@ -1,7 +1,7 @@
 Meta:
 @ReportName Eddie Bauer
 
-Scenario:  TC04_Eddiebauer_Verify_price_correctness_after_updating_item_QTY
+Scenario:  check of the cart functionality remove and edit 
 
 Given [1101-1080] eddiebauerQuickView should be displayed
 When [1100-1400] Execute `click` javascript on eddiebauerQuickViewCheckout

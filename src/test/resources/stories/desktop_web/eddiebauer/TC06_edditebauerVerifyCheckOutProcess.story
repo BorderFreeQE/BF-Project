@@ -1,7 +1,7 @@
 Meta:
 @ReportName Eddie Bauer
 
-Scenario:  TC06_Eddiebauer_Verify_All_Checkout_Test_Cases
+Scenario:  check of CheckOut process by add invalid and valid values
 
 Given [1101-1080] eddiebauerBagPage should be displayed
 When [1100-1400] Execute `click` javascript on eddiebauerProceedToCheckout

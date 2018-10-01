@@ -1,6 +1,7 @@
 Meta:
 
 @ReportName nordstrom
+@both
 
 Scenario:  Nordstrom_Verify_CheckOut
 Given [1000-9001] User on nordstrom page

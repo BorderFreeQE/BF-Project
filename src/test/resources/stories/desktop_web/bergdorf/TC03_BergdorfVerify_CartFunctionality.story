@@ -1,7 +1,7 @@
 Meta:
 @ReportName Bergdorf Goodman
 
-Scenario:  TC03_Bergdorf_Verify_price_correctness_after_updating_item_QTY
+Scenario:  heck of the cart functionality remove and edit
 
 When [1111-1080] bergdorfBagPage should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the bergdorfBagEditItem
@@ -17,3 +17,5 @@ And [1100-1300] User clicks on the bergdorfBagEditItem
 And [1111-1080] bergdorfBagQuantity should be displayed, Within 120 seconds
 And [1100-1340] User fills bergdorfBagQuantity with 1
 And [1100-1300] User clicks on the bergdorfBagUpdate
+And [1100-1300] User clicks on the berbergdorfBagRemove
+And [1111-0060] It should not be present, Within 20 seconds

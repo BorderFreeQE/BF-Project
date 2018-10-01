@@ -1,6 +1,7 @@
 Meta:
 
 @ReportName nordstrom
+@both
 
 Scenario:  Nordstrom_Verify_PaymentRequirements(invalid valus)
 Given [1100-1300] User clicks on the nordstrom Palce Order Button

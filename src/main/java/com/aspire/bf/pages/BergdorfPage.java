@@ -66,6 +66,10 @@ public interface BergdorfPage {
 	
 	@CssSelector("${pages.bergdorf.bergdorfBagEditContainer}")
 	public AspireWebElement bergdorfBagEditContainer();
+	//
+	
+	@CssSelector("${berbergdorfBagRemove}")
+	public AspireWebElement berbergdorfBagRemove();
 	
 	@CssSelector("${pages.bergdorf.bergdorfBagQuantity}")
 	public AspireWebElement bergdorfBagQuantity();

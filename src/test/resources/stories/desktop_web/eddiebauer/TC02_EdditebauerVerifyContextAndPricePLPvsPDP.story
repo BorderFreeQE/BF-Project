@@ -1,7 +1,7 @@
 Meta:
 @ReportName Eddie Bauer
 
-Scenario:  TC02_Eddiebauer_Verify_PDP_ProductName_And_Price
+Scenario: check price localization and context chooser
 
 Given [1000-9001] User on eddiebauer page
 When [1211-1000] eddiebauerTopNav should be all clickable, Within 120 seconds

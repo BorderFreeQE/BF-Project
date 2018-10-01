@@ -1,5 +1,6 @@
 Meta:
 @ReportName nordstrom
+@both
 
 Scenario:  Nordstrom_Verify_Pre-RequestOrder
 

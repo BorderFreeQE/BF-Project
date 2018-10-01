@@ -15,6 +15,7 @@ public interface GapPage {
 	@CssSelector("${gapCategorySection}")
 	public AspireWebElement gapCategorySection();
 	
+	
 	@CssSelector("${gapCategory}")
 	public AspireWebElement gapCategory();
 	
@@ -27,6 +28,9 @@ public interface GapPage {
 	
 	@CssSelector("${gapCategoryProduct}")
 	public AspireWebElements gapCategoryProduct();
+	
+	@CssSelector("${gapCategoryChild}")
+	public AspireWebElements gapCategoryChild(); 
 	
 	@CssSelector("${gapPromoDrower}")
 	public AspireWebElement gapPromoDrower();

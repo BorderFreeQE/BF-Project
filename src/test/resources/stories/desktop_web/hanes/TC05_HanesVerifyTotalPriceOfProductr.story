@@ -25,7 +25,7 @@ Examples:
 |hanes First Item Price|
 |hanes Second Item Price|
 
-Scenario: Gap_Verify_TotalPriceOfProductr:Total price
+Scenario: Gcheck sum to order price 
 Given [1000-9000] User opens hanes page
 When [1111-1080] hanes Bag Dialog should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the hanes View Shopping Cart

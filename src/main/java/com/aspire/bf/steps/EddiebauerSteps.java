@@ -57,7 +57,7 @@ public class EddiebauerSteps {
 			{
 				 Random rand = new Random();
 				 int  random = 1 + rand.nextInt(AspireBrowser.getElementByPropertyNameGlobaly(element).asSelect().getOptions().size());
-				 AspireBrowser.getElementByPropertyNameGlobaly(element).asSelect().selectByIndex(random);
+				 AspireBrowser.getElementByPropertyNameGlobaly(element).asSelect().selectByIndex(1);
 			}
 		   
 		}

@@ -202,7 +202,7 @@ public interface EbagsPage {
 	public AspireWebElement eBagesAcceptAlert();	
 	
 	@CssSelector("${eBagsPdpSize}")
-	public AspireWebElement eBagsPdapSize();
+	public AspireWebElements eBagsPdpSize();
 	
 	@CssSelector("${eBagsPdpSizeDropdown}")
 	public AspireWebElements eBagsPdpSizeDropdown();

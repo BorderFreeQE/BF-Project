@@ -234,7 +234,7 @@ public class CommonSteps {
 				break;
 
 			default:
-				if (checkElement(unexpectedMessage, 3) != false)
+				if (checkElement(unexpectedMessage, time) != false)
 					;
 				massage.click();
 				break;
@@ -325,4 +325,5 @@ public class CommonSteps {
 		}
 
 	}
+	
 }
