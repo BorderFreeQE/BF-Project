@@ -4,7 +4,6 @@ Meta:
 Scenario:  heck price localization and context chooser
 
 Given [1000-9001] User on bergdorf page
-Given [1000-9000] User opens bergdorf page
 When [1211-1000] bergdorfTopNav should be all clickable, Within 120 seconds
 And [1200-0302] For any of the elements
 And [1100-0370] User move mouse to it and click it

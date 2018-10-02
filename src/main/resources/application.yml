@@ -11,17 +11,17 @@ aspire:
       defaultloader:
         enabled: true   
         include:
-          - stories/desktop_web/herroom/**.story  
-          - stories/desktop_web/hisroom/**.story  
-          - stories/desktop_web/bcbg/**.story  
-          - stories/desktop_web/bergdorf/**.story  
-          - stories/desktop_web/ebags/**.story  
-          - stories/desktop_web/eddiebauer/**.story  
-          - stories/desktop_web/gap/**.story  
-          - stories/desktop_web/hanes/**.story  
-          - stories/desktop_web/herroom/**.story  
-          - stories/desktop_web/hisroom/**.story  
-          - stories/desktop_web/nordstrom/**.story  
+          - stories/desktop_web/llbean/**.story   
+#          - stories/desktop_web/hisroom/**.story  
+#          - stories/desktop_web/bcbg/**.story  
+#          - stories/desktop_web/bergdorf/**.story  
+#          - stories/desktop_web/ebags/**.story  
+#          - stories/desktop_web/eddiebauer/**.story  
+#          - stories/desktop_web/gap/**.story  
+#          - stories/desktop_web/hanes/**.story  
+#          - stories/desktop_web/herroom/**.story  
+#          - stories/desktop_web/hisroom/**.story  
+#          - stories/desktop_web/nordstrom/**.story  
 #          - stories/chico's/**.story
 #          - stories/desktop_web/**/**.story
           
@@ -54,7 +54,7 @@ aspire:
   webdriver:
     scope: restart
     strategy: MIXED
-    default-driver-name: firefox 
+    default-driver-name: chrome 
     android:
       name: android
       enabled: false

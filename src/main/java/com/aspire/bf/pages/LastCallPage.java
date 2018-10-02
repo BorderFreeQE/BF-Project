@@ -74,6 +74,12 @@ public interface LastCallPage {
 	@CssSelector("${pages.lastcall.lastcallSize}")
 	public AspireWebElement lastcallSize();
 	
+	@CssSelector("${lastcallTakeOffMessage}")
+	public AspireWebElement lastcallTakeOffMessage();
+	
+	@CssSelector("${lastcallunavailable}")
+	public AspireWebElement lastcallunavailable();
+	
 	@CssSelector("${pages.lastcall.lastcallColor}")
 	public AspireWebElement lastcallColor();
 	

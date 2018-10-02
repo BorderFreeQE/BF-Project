@@ -147,7 +147,7 @@ public class LanebryantSteps {
 	public void randomclick(String element)
 	{
 		Random rand = new Random();
-		if(AspireBrowser.getElementsByPropertyNameGlobaly(element).size() == 1)
+		if(AspireBrowser.getElementsByPropertyNameGlobaly(element).size()>0)
 		{
 			AspireBrowser.getElementsByPropertyNameGlobaly(element).index(0).js("arguments[0].click();", null);
 		}

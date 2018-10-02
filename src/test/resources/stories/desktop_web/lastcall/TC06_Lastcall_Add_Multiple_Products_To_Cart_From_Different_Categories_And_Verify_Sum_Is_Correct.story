@@ -19,7 +19,7 @@ And [1111-1080] lastcallPdp should be displayed, Within 120 seconds
 And [8014-0001] user search for lastcallValidPdp
 And [8014-0003] user randomly select an available lastcallSize
 And [8014-0003] user randomly select an available lastcallColor
-And [1100-1300] User clicks on the lastcallAddToBag
+And [1100-1321] User scroll to the lastcallAddToBag then click it
 And [1111-1080] lastcallBagDialog should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the lastcallBagCheckout
 Then [1111-1080] lastcallBagPage should be displayed, Within 120 seconds

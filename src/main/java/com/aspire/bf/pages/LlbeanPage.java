@@ -66,6 +66,10 @@ public interface LlbeanPage {
 	@CssSelector("${pages.llbean.llbeanPdpImage}")
 	public AspireWebElement llbeanPdpImage();
 	
+	
+	@CssSelector("${llbeanCloseCoockisMessage}")
+	public AspireWebElement llbeanCloseCoockisMessage();
+	
 	@CssSelector("${pages.llbean.llbeanSizeGroup}")
 	public AspireWebElements llbeanSizeGroup();
 	

@@ -18,6 +18,6 @@ And [8013-0003] user randomly select an available llbeanSizeGroup
 And [8013-0003] user randomly select an available llbeanSize
 And [8013-0003] user randomly select an available llbeanColor
 And [1100-1400] Execute `click` javascript on llbeanAddToBag
-And [1111-1080] llbeanBagDialog should be displayed, Within 120 seconds
-And [1100-1300] User clicks on the llbeanBagCheckout
+And [8013-0006] sleep after last action for 3000 Milliseconds
+And [1100-1400] Execute `click` javascript on llbeanBagCheckout
 Then [1111-1080] llbeanBagPage should be displayed, Within 120 seconds

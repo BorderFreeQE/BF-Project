@@ -1,12 +1,13 @@
 Meta:
-@ReportName Landsend
+@ReportName Landsendz
 
 Scenario: Landsend_Verify_Pre-RequestOrder
 
 Given [1000-9000] User opens landsend page
-When [8012-399] Navigate to `landsend Direct URL` page
-And [8012-993] User scroll 700 to laod items
-And [8012-992] sleep time 3000
+When [1200-1302] For any element from landsend Top Nav
+And [1100-0360] User move mouse to it
+And [1200-1302] For any element from landsend Sales
+And [1100-0300] User click on it
 And [1200-1302] For any element from landsend Products
 And [1101-1181] the user saves landsend Product Price text in global scope under name landsend Product Price
 And [1101-1181] the user saves landsend Product Name text in global scope under name landsend Product Name

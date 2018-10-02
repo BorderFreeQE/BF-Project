@@ -10,6 +10,7 @@ And [1100-0300] User click on it
 And [1211-1080] lastcallSales should be all displayed, Within 120 seconds
 And [1200-1302] For any element from lastcallSales
 And [1100-0400] Execute `click` javascript on the element
+And [8012-300]User check unexpected lastcallTakeOffMessage message present on site lastcall within 3
 And [8014-0001] user search for lastcallPlpPage
 And [1211-1080] lastcallProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from lastcallProducts

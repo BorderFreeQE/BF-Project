@@ -4,9 +4,10 @@ Meta:
 
 Scenario:  Landsend_Verify_UpdateQuntityItemItemsFromCart
 Given [1000-9001] User on landsend page
-When [8012-399] Navigate to `landsend Direct URL` page
-And [8012-993] User scroll 700 to laod items
-And [8012-992] sleep time 3000
+When [1200-1302] For any element from landsend Top Nav
+And [1100-0360] User move mouse to it
+And [1200-1302] For any element from landsend Sales
+And [1100-0300] User click on it
 And [1200-1302] For any element from landsend Products
 And [1100-0320] User scroll to it
 And [1100-0300] User click on it
