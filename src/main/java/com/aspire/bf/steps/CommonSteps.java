@@ -10,6 +10,7 @@ import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.openqa.selenium.By.ByXPath;
+import org.openqa.selenium.support.ui.Sleeper;
 import org.openqa.selenium.WebElement;
 import org.springframework.stereotype.Component;
 
@@ -155,17 +156,16 @@ public class CommonSteps {
 		switch (itemName.trim()) {
 		case "SizeRange":
 			if (checkElements(elementName) != false && itemsIsDisplayed == false) {
-				randomclick(elementName);
+			    verifyTime(1000);
+     			randomclick(elementName);
 			}
 
 			break;
 
 		case "Size":
 			if (checkElements(elementName) != false && itemsIsDisplayed == false) {
-				try {
+				    verifyTime(1000);
 					randomclick(elementName);
-				} catch (Exception e) {
-				}
 			}
 
 			break;
@@ -184,6 +184,7 @@ public class CommonSteps {
 			break;
 		case "Color":
 			if (checkElements(elementName) != false && itemsIsDisplayed == false) {
+			    verifyTime(1000);
 				randomclick(elementName);
 			}
 
@@ -255,6 +256,11 @@ public class CommonSteps {
 						+ "campaign=0904mensdlp07favesshirts&jid=j009163-6557&cid=6sxab&cm_sp=merch-_-men_6557_j009163-_-freelayout_mn_p07_shop&");
 
 				break;
+			case "hanes":
+				AspireBrowser.getLastAccessedPage().open("https://shop.nordstrom.com/c/mens-shirts?"
+						+ "campaign=0904mensdlp07favesshirts&jid=j009163-6557&cid=6sxab&cm_sp=merch-_-men_6557_j009163-_-freelayout_mn_p07_shop&");
+
+				break;
 
 			default:
 				break;
@@ -262,6 +268,15 @@ public class CommonSteps {
 				}
 	}
 
+//	@When("[8000-6756] User select from $currentlyPage page valid item $item")
+//	public void shippableItem(@Named("currentlyPage")String currentlyPage,@Named("item")String itme) {
+//		verifyTime(1000);
+//		AspireBrowser getItem= AspireWebEleme
+//		
+//		
+//	}
+	
+	
 	private boolean removeItem(String site, String getElement) {
 		switch (site) {
 		case "nordstrom":

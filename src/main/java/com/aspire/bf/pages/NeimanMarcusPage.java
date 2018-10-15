@@ -209,7 +209,10 @@ public interface NeimanMarcusPage {
 	public AspireWebElement neimanmarcusExpirationYear();
 	
 	@CssSelector("${pages.neimanmarcus.neimanmarcusCheckoutSubmitError}")
-	public AspireWebElement neimanmarcusCheckoutSubmitError();
+	public AspireWebElement neimanmarcusCheckoutSubmitError();	
+	
+	@CssSelector("${neimanmarcusUnavailableQuantityMessage}")
+	public AspireWebElement neimanmarcusUnavailableQuantityMessage();
 	
 	@CssSelector("${neimanmarcusContinueCheckOut}")
 	public AspireWebElement neimanmarcusContinueCheckOut();

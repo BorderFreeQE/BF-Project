@@ -75,10 +75,10 @@ public interface ChicosPage {
 	public AspireWebElements chicosColor();	
 	
 	@CssSelector("${chicosCartFirstItemPrice}")
-	public AspireWebElements chicosCartFirstItemPrice();	
+	public AspireWebElement chicosCartFirstItemPrice();	
 	
 	@CssSelector("${chicosCartSecondItemPrice}")
-	public AspireWebElements chicosCartSecondItemPrice();	
+	public AspireWebElement chicosCartSecondItemPrice();	
 
 	
 	@CssSelector("${chicosCartDialog}")

@@ -11,50 +11,42 @@ aspire:
       defaultloader:
         enabled: true   
         include:
-          - stories/desktop_web/llbean/**.story   
-#          - stories/desktop_web/hisroom/**.story  
-#          - stories/desktop_web/bcbg/**.story  
-#          - stories/desktop_web/bergdorf/**.story  
-#          - stories/desktop_web/ebags/**.story  
-#          - stories/desktop_web/eddiebauer/**.story  
-#          - stories/desktop_web/gap/**.story  
-#          - stories/desktop_web/hanes/**.story  
-#          - stories/desktop_web/herroom/**.story  
-#          - stories/desktop_web/hisroom/**.story  
-#          - stories/desktop_web/nordstrom/**.story  
-#          - stories/chico's/**.story
-#          - stories/desktop_web/**/**.story
-          
+#          - stories/desktop_web/01-underarmour/**.story   
+#          - stories/desktop_web/02-lastcall/**.story  
+#          - stories/desktop_web/03-landsend/**.story  
+#          - stories/desktop_web/04-bergdorf/**.story  
+#          - stories/desktop_web/05-ebags/**.story  
+#          - stories/desktop_web/06-eddiebauer/**.story  
+#          - stories/desktop_web/07-neimanmarcus/**.story  
+#          - stories/desktop_web/08-ruelala/**.story
+#          - stories/desktop_web/09-partycitycanada/**.story
+#          - stories/bloomingdales/**.story
 #          - stories/mobile_web/**/**.story
-###          - stories/mobile_web/harrods/**.story
-###          - stories/mobile_web/barneys/**.story
-#
-#          - stories/mobile_web/hanes/**.story
-##          - stories/mobile_web/lastcall/**.story
-#          - stories/mobile_web/lanedbryant/**.story          
-##          - stories/mobile_web/neimanmarcus/**.story
-#          - stories/mobile_web/bcbg/**.story
+          - stories/desktop_web/**/**.story
+
+
+#          - stories/mobile_web/lastcall/**.story
+#          - stories/mobile_web/neimanmarcus/**.story
 #          - stories/mobile_web/eddiebauer/**.story
 ##          - stories/mobile_web/ebags/**.story
-#          - stories/mobile_web/lordandtaylor/**.story
-##          - stories/mobile_web/saksoff/**.story
 #          - stories/mobile_web/nordstrom/**.story
-##          - stories/mobile_web/pacsun/**.story
 #          - stories/mobile_web/bergdorf/**.story
-#          - stories/mobile_web/saks/**.story
+#          - stories/mobile_web/partycitycanada/**.story
+#          - stories/mobile_web/landsend/**.story
+#          - stories/mobile_web/underarmour/**.story
+
+#          - stories/mobile_web/11-chico's/**.story
+##          - stories/mobile_web/lordandtaylor/**.story
+###          - stories/mobile_web/saksoff/**.story
+##          - stories/mobile_web/saks/**.story
 #          - stories/mobile_web/ruelala/**.story
 #          - stories/mobile_web/llbean/**.story
-##          - stories/mobile_web/partycitycanada/**.story
-#          - stories/mobile_web/landsend/**.story
-##          - stories/mobile_web/lastcall/**.story
-#          - stories/mobile_web/underarmour/**.story
-          
-
+###          - stories/mobile_web/pacsun/**.story
 
   webdriver:
     scope: restart
     strategy: MIXED
-    default-driver-name: chrome 
+    default-driver-name:  chrome
     android:
       name: android
       enabled: false

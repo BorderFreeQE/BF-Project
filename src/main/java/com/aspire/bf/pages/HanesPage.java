@@ -32,15 +32,6 @@ public interface HanesPage {
 	@CssSelector("${hanesProductPrice}")
 	public AspireWebElement hanesProductPrice();
 	
-	@CssSelector("${hanesShappingTo}")
-	public AspireWebElement hanesShappingTo();
-	
-	@CssSelector("${hanesSelectCountry}")
-	public AspireWebElement hanesSelectCountry();
-	
-	@CssSelector("${hanesSaveContinue}")
-	public AspireWebElement hanesSaveContinue();
-	
 	
 	@XPathSelector("${hanesSignUp}")
 	public AspireWebElement hanesSignUp();
@@ -257,5 +248,15 @@ public interface HanesPage {
 	
 	@CssSelector("${mobileHanesTotalPrice}")
 	public AspireWebElement mobileHanesTotalPrice();
+	
+	@CssSelector("${hanesCurrentCountry}")
+	public AspireWebElement hanesCurrentCountry();
+	
+	@CssSelector("${hanesSelectCountry}")
+	public AspireWebElement hanesSelectCountry();
+	
+	@CssSelector("${hanesOkButton}")
+	public AspireWebElement hanesOkButton();
+	
 	
 }
