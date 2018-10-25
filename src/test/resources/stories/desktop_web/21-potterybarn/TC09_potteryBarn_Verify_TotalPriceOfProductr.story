@@ -2,9 +2,8 @@ Meta:
 
 @ReportName potteryBarn
 
-Scenario: potteryBarn_Verify_TotalPriceOfProductr
 
-Scenario: Gap_Verify_TotalPriceOfProductr
+Scenario: potteryBarn_Verify_TotalPriceOfProductr
 Then [1000-9110] User navigate to `potteryBdirect` URL
 When [8012-993] User scroll 700 to laod items
 And [8012-992] sleep time 3000
@@ -29,7 +28,7 @@ Examples:
 |williamsS First Price|
 |williamsS Second Price|
 
-Scenario: Gap_Verify_TotalPriceOfProductr:Total price
+Scenario: potteryBarn_Verify_TotalPriceOfProductr:Total price
 Given [8012-992] sleep time 3000
 Then [1000-9110] User navigate to `williamsCartSection` URL
 And [1101-1184] the user saves williamS Cart Total Price text in scenario scope under name potteryB Total Price

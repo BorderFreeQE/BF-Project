@@ -27,7 +27,7 @@ Examples:
 |soma Cart Second Item Price|Soma Second Item Price|
 
 
-Scenario: Gap_Verify_TotalPriceOfProductr:Total price
+Scenario: Verify_TotalPriceOfProductr:Total price
 Given [1000-9001] User on soma page
 When [1101-1181] the user saves soma Total Price text in global scope under name soma Total Price
 Then [8000-0003] the user check the sum of `chichs First Item Price` and `chichs Second Item Price` with `somaTotalPrice`

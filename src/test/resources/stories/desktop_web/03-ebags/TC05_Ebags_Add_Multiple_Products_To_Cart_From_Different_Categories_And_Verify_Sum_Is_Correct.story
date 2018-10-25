@@ -9,8 +9,8 @@ And [1100-0300] User click on it
 And [8006-0001] user search for ebagsProducts
 And [1211-1080] ebagsProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from ebagsProducts
-And [1100-0360] User move mouse to it
-And [1100-1400] Execute `click` javascript on ebagsItemCart
+And [1100-0320] User scroll to it
+And [1100-0300] User click on it
 And [8012-329] User select size from dropdown list and click any one of eBagsPdpSize
 And [1111-1080] ebagsQuickView should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the ebagsViewCartLink

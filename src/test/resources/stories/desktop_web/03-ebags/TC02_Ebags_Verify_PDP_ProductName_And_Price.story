@@ -13,7 +13,8 @@ And [1200-1302] For any element from ebagsProducts
 And [1100-1581] the user saves ebagsPlpImage attribute of src in global scope under name ebagsPlpImage
 And [1101-1181] the user saves ebagsProductPrice text in global scope under name ebagsProductPrice
 And [1101-1181] the user saves ebagsProductName text in global scope under name ebagsProductName
-And [1100-0400] Execute `click` javascript on the element
+And [1100-0320] User scroll to it
+And [1100-0300] User click on it
 And [1111-1080] ebagsPdpProductPage should be displayed, Within 120 seconds
 And [1101-1181] the user saves ebagsPdpProductPrice text in global scope under name ebagsPdpProductPrice
 Then [1101-1140] ebagsPdpProductName text should contain `ebagsProductName`

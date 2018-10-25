@@ -2,7 +2,7 @@ aspire:
   webdriver:
     scope: restrat     
     chrome:
-      enabled: true
+      enabled: false
       name: chrome
       mobile: false
       remote:
@@ -35,7 +35,7 @@ aspire:
       - --disable-extensions
        
     firefox:
-      enabled: false
+      enabled: true
       name: firefox
       mobile: false
       remote:

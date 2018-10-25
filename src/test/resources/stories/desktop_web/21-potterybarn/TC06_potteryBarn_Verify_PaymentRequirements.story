@@ -12,7 +12,7 @@ And [1101-1140] nordstrom SecurityCode Error text should contain Security code i
 
 
 
-Scenario:  Nordstrom_Verify_PaymentRequirements(valid valus)
+Scenario:  potteryBarn_Verify_PaymentRequirements(valid valus)
 When [1100-1340] User fills nordstrom Payment CardNumber with `paymentCardNumber`
 And [1100-1340] User fills nordstrom Payment Expiration Date with `paymentExpirationDate`
 And [1100-1340] User fills nordstrom Payment Security Code with `paymentSecurityCode`

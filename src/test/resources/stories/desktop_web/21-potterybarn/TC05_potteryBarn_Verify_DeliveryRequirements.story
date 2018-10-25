@@ -20,7 +20,7 @@ And [1101-1102] williamS Post Error text is equal to Postal code is required cas
 
 
 
-Scenario:  Nordstrom_Verify_DeliveryRequirements(valid values)
+Scenario:  potteryBarn_Verify_DeliveryRequirements(valid values)
 When [1100-1340] User fills nordstrom Delivery Email Address with `Email`
 And [1100-1340] User fills nordstrom Delivery First Name with `firstName`
 And [1100-1340] User fills nordstrom Delivery Last Name with `lastName`
